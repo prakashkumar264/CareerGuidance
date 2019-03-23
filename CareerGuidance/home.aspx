@@ -15,35 +15,20 @@
         <link rel="apple-touch-icon" href="images2/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images2/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images2/apple-touch-icon-114x114.png">
-        <!-- animation -->
         <link rel="stylesheet" href="css2/animate.css" />
-        <!-- bootstrap -->
         <link rel="stylesheet" href="css2/bootstrap.css" />
-        <!-- et line icon -->
         <link rel="stylesheet" href="css2/et-line-icons.css" />
-        <!-- font-awesome icon -->
         <link rel="stylesheet" href="css2/font-awesome.min.css" />
-        <!-- revolution slider -->
         <link rel="stylesheet" href="css2/extralayers.css" />
         <link rel="stylesheet" href="css2/settings.css" />
-        <!-- magnific popup -->
         <link rel="stylesheet" href="css2/magnific-popup.css" />
-        <!-- owl carousel -->
         <link rel="stylesheet" href="css2/owl.carousel.css" />
         <link rel="stylesheet" href="css2/owl.transitions.css" />
         <link rel="stylesheet" href="css2/full-slider.css" />
-        <!-- text animation -->
         <link rel="stylesheet" href="css2/text-effect.css" />
-        <!-- common -->
         <link rel="stylesheet" href="css2/style.css" />
-        <!-- responsive -->
         <link rel="stylesheet" href="css2/responsive.css" />
-        <!--[if IE]>
-            <link rel="stylesheet" href="css/style-ie.css" />
-        <![endif]-->
-        <!--[if IE]>
-            <script src="js/html5shiv.js"></script>
-        <![endif]-->
+       
 </head>
 <body>
     <form id="form1" runat="server">
@@ -57,11 +42,6 @@
                 <div class="row">
                     <!-- logo -->
                     <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
-                    <!-- end logo -->
-                    <!-- search and cart  -->
-                    
-                    <!-- end search and cart  -->
-                    <!-- toggle navigation -->
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -70,41 +50,43 @@
                     <div class="col-md-8 accordion-menu text-right">
                         <div class="navbar-collapse collapse">
                             <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
-                                <!-- menu item -->
+                         
                                 <li class="dropdown panel">
-                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Home <i class="fa fa-angle-down"></i></a>
+                                    <a href="#" >Home <i class="fa fa-angle-down"></i></a>
                                 </li>
-                                <!-- end menu item -->
+                               
 								 <li class="dropdown panel">
-                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">About Us <i class="fa fa-angle-down"></i></a>
+                                    <a href="#" >About Us <i class="fa fa-angle-down"></i></a>
                                 </li>
 								 <li class="dropdown panel">
-                                    <a href="#collapse1" class="dropdown-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-hover="dropdown">Contact Us <i class="fa fa-angle-down"></i></a>
+                                    <a href="#" >Contact Us <i class="fa fa-angle-down"></i></a>
+                                </li>
+
+                                <li class="dropdown panel">
+                                    <a href="login.aspx">Login<i class="fa fa-angle-down"></i></a>
                                 </li>
 							
+                                <li class="dropdown panel">
+                                    <a href="Register.aspx" >Register <i class="fa fa-angle-down"></i></a>
+                                </li>
 							
                             </ul>
                         </div>
                     </div>
-                    <!-- end main menu -->
+                 
                 </div>
             </div>
         </nav>
-        <!-- end navigation panel -->
-        <!-- slider -->
+
         <section id="myCarousel" class="carousel slide carousel-slide">
-            <!-- slider indicators -->
             <ol class="carousel-indicators xs-indicators-black">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <!-- end slider indicators -->
-            <!-- slider images -->
+
             <div class="carousel-inner">
-                <!-- slider item -->
                 <div class="item active full-screen">
-                    <!-- Set the first background image using inline CSS below. -->
                     <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
                     <div class="opacity-full bg-white display-none xs-display-block"></div>
                     <div class="container">

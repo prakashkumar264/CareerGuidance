@@ -24,7 +24,7 @@
                             <h2>
                                 Skills
                                 <br />
-								<a type="button" class="btn bg-green waves-effect" style="width:inherit" href="skills-add.html">
+								<a type="button" class="btn bg-green waves-effect" style="width:inherit" href="SkillAdd.aspx">
 									 <i class="material-icons">add_box</i><span>Add New</span>
 								</a>
                             </h2>
@@ -49,12 +49,12 @@
 										     
 										</td>
                                         <td style="text-align:center">
-											<a href="skills-edit.html" type="button" class="btn bg-orange waves-effect" style="width:inherit">
+											<a href="SkillEdit.aspx" type="button" class="btn bg-orange waves-effect" style="width:inherit">
 												 <i class="material-icons">mode_edit</i><span>Edit</span>
 											</a>
 										</td>
 									     <td style="text-align:center">
-											<a href="skills-delete.html" type="button" class="btn bg-red waves-effect" style="width:inherit">
+											<a href="SkillDelete.aspx" type="button" class="btn bg-red waves-effect" style="width:inherit">
 												 <i class="material-icons">delete</i><span>Delete</span>
 											</a>
 										</td>

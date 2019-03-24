@@ -56,10 +56,10 @@
                                 </li>
                                
 								 <li class="dropdown panel">
-                                    <a href="#" >About Us <i class="fa fa-angle-down"></i></a>
+                                    <a href="AboutUs.aspx" >About Us <i class="fa fa-angle-down"></i></a>
                                 </li>
 								 <li class="dropdown panel">
-                                    <a href="#" >Contact Us <i class="fa fa-angle-down"></i></a>
+                                    <a href="ContactUs.aspx" >Contact Us <i class="fa fa-angle-down"></i></a>
                                 </li>
 
                                 <li class="dropdown panel">

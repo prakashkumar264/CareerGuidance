@@ -103,8 +103,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
+    <Content Include="AboutUs.aspx" />
+    <Content Include="aptitude.aspx" />
+    <Content Include="AptitudeTest.aspx" />
+    <Content Include="aptitudeview.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -3938,6 +3942,9 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="SkillAdd.aspx" />
+    <Content Include="SkillDelete.aspx" />
+    <Content Include="SkillEdit.aspx" />
     <Content Include="Skills.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -3945,21 +3952,49 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="aptitude.aspx.cs">
+      <DependentUpon>aptitude.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aptitude.aspx.designer.cs">
+      <DependentUpon>aptitude.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AptitudeTest.aspx.cs">
+      <DependentUpon>AptitudeTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AptitudeTest.aspx.designer.cs">
+      <DependentUpon>AptitudeTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aptitudeview.aspx.cs">
+      <DependentUpon>aptitudeview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aptitudeview.aspx.designer.cs">
+      <DependentUpon>aptitudeview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -4034,6 +4069,27 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SkillAdd.aspx.cs">
+      <DependentUpon>SkillAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillAdd.aspx.designer.cs">
+      <DependentUpon>SkillAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillDelete.aspx.cs">
+      <DependentUpon>SkillDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillDelete.aspx.designer.cs">
+      <DependentUpon>SkillDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillEdit.aspx.cs">
+      <DependentUpon>SkillEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillEdit.aspx.designer.cs">
+      <DependentUpon>SkillEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="Skills.aspx.cs">
       <DependentUpon>Skills.aspx</DependentUpon>

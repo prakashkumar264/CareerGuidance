@@ -206,7 +206,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="home.aspx">
+                        <a href="index.aspx">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -230,7 +230,7 @@
                         </a>
                     </li>
 					<li>
-                        <a href="results.html">
+                        <a href="results.aspx">
                             <i class="material-icons">home</i>
                             <span>Results</span>
                         </a>

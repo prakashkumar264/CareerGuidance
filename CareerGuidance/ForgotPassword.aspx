@@ -30,8 +30,8 @@
     <form id="form1" runat="server">
        <div class="fp-box">
         <div class="logo">
-            <a href="javascript:void(0);">Admin<b>BSB</b></a>
-            <small>Admin BootStrap Based - Material Design</small>
+            <a href="javascript:void(0);">Upgrowth Forgot Password</a>
+           
         </div>
         <div class="card">
             <div class="body">

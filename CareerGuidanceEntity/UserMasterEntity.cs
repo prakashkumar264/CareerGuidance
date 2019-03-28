@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CareerGuidanceEntity
 {
-    class UserMasterEntity
+    public class UserMasterEntity
     {
 
         private string _Name;

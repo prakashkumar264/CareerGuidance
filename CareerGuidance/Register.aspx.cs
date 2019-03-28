@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Data;
+using CareerGuidanceDAL;
+using CareerGuidanceEntity;
+
 
 
 namespace CareerGuidance
@@ -22,11 +25,9 @@ namespace CareerGuidance
 
             try
             {
-                DataSet dslogin = objuserDAL.registerform(name,email, password);
+                DataSet dsregister = objuserDAL.registerform(name,email, password);
 
-                string id = Convert.ToString(dslogin.Tables[0].Rows[0]["id"]);
-                string roleid = Convert.ToString(dslogin.Tables[0].Rows[0]["roleid"]);
-                string typeid = Convert.ToString(dslogin.Tables[0].Rows[0]["typeid"]);
+                Response.Redirect("login.aspx");
             }
             catch (Exception ex)
             {

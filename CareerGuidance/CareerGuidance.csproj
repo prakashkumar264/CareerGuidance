@@ -4203,6 +4203,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CareerGuidanceDAL\CareerGuidanceDAL.csproj">
+      <Project>{3CD79D68-6F19-45AD-ACDC-628A6A60FDA5}</Project>
+      <Name>CareerGuidanceDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CareerGuidanceEntity\CareerGuidanceEntity.csproj">
+      <Project>{9E899DAC-5C23-4ED0-B657-9CC25A40045D}</Project>
+      <Name>CareerGuidanceEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -35,14 +35,14 @@
         </div>
         <div class="card">
             <div class="body">
-                <form id="sign_in" method="POST">
+               
                     <div class="msg">Sign in to start your session</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                            <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="input-group">
@@ -50,7 +50,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
@@ -59,7 +59,7 @@
                             <label for="rememberme">Remember Me</label>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit">SIGN IN</button>
+                             <asp:Button ID="btn_login" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Login" OnClick="btn_login_Click"  />
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">
@@ -70,7 +70,7 @@
                             <a href="ForgotPassword.aspx">Forgot Password?</a>
                         </div>
                     </div>
-                </form>
+                
             </div>
         </div>
     </div>

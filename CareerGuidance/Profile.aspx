@@ -16,26 +16,10 @@
                             <div class="content-area">
                                 <h3>Marc K. Hammond</h3>
                                 <p>Web Software Developer</p>
-                                <p>Administrator</p>
+                               
                             </div>
                         </div>
-                        <div class="profile-footer">
-                            <ul>
-                                <li>
-                                    <span>Followers</span>
-                                    <span>1.234</span>
-                                </li>
-                                <li>
-                                    <span>Following</span>
-                                    <span>1.201</span>
-                                </li>
-                                <li>
-                                    <span>Friends</span>
-                                    <span>14.252</span>
-                                </li>
-                            </ul>
-                            <button class="btn btn-primary btn-lg waves-effect btn-block">FOLLOW</button>
-                        </div>
+                       
                     </div>
 
                     <div class="card card-about-me">
@@ -214,68 +198,68 @@
                                         </div>
                                     </div>
                                     <div role="tabpanel" class="tab-pane fade in" id="profile_settings">
-                                        <form class="form-horizontal">
+                                      
+                                            
                                             <div class="form-group">
-                                                <label for="NameSurname" class="col-sm-2 control-label">Name Surname</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="NameSurname" name="NameSurname" placeholder="Name Surname" value="Marc K. Hammond" required>
+                                                           <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email ID" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="form-group">                                                
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtPhone" class="form-control" placeholder="Phone Number" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="Email" class="col-sm-2 control-label">Email</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" value="example@example.com" required>
+                                                       <asp:TextBox ID="txtLocation" class="form-control" placeholder="Location" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="InputExperience" class="col-sm-2 control-label">Experience</label>
-
+                                            <div class="form-group">                                              
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <textarea class="form-control" id="InputExperience" name="InputExperience" rows="3" placeholder="Experience"></textarea>
+                                                       <asp:TextBox ID="txtJobRole" class="form-control" placeholder="Job Role" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Skills</label>
-
+                                            <div class="form-group">                                                
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputSkills" name="InputSkills" placeholder="Skills">
+                                                        <asp:TextBox ID="txtExperience" class="form-control" placeholder="Experience" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="form-group">                                                
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtSkills" class="form-control" placeholder="Skills" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+											<div class="form-group">                                               
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                         <asp:TextBox ID="txtPassion" class="form-control" placeholder="Passion" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
 											<div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Passion</label>
-
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputPassion" name="InputPassion" placeholder="Passion">
-                                                    </div>
-                                                </div>
-                                            </div>
-											<div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Interest</label>
-
-                                                <div class="col-sm-10">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputInterest" name="InputInterest" placeholder="Interest">
+                                                        <asp:TextBox ID="txtInterest" class="form-control" placeholder="Interest" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
 
 
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-danger">SUBMIT</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            <asp:Button ID="btn_Update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"  />
+                                       
                                     </div>
 
 									<div role="tabpanel" class="tab-pane fade in" id="education">

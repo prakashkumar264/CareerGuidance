@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>H-Code | shared on themelock.com</title>
+    <title>UpGrowth</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                    <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -52,7 +52,7 @@
                             <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
                          
                                 <li class="dropdown panel">
-                                    <a href="#" >Home <i class="fa fa-angle-down"></i></a>
+                                    <a href="home.aspx" >Home <i class="fa fa-angle-down"></i></a>
                                 </li>
                                
 								 <li class="dropdown panel">
@@ -624,7 +624,7 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images2/logo-light-gray.png" alt="" /></a>
+                            <a href="#"><img src="images2/logo-light-gray.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>

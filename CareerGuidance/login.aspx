@@ -45,7 +45,7 @@
                         <div class="form-line">
                             <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server" required="required"></asp:TextBox>
                         </div>
-                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter email"></asp:RequiredFieldValidator>
+                         
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter corect email"  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>                                                                           
                    
                     </div>
@@ -54,7 +54,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server" required="required"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">

@@ -84,6 +84,8 @@
                                 </ul>
 
                                 <div class="tab-content">
+
+                                   <%-- Profile Wall--%>
                                     <div role="tabpanel" class="tab-pane fade in active" id="home">
                                         <div class="panel panel-default panel-post">
                                             <div class="panel-heading">
@@ -197,6 +199,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <%--Basic Profile Data--%>
                                     <div role="tabpanel" class="tab-pane fade in" id="profile_settings">
                                       
                                             
@@ -258,10 +262,12 @@
                                             </div>
 
 
-                                            <asp:Button ID="btn_Update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"  />
+                                            <asp:Button ID="btn_Update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"  OnClick="btn_profile_update" />
                                        
                                     </div>
 
+
+                                    <%--Education Details--%>
 									<div role="tabpanel" class="tab-pane fade in" id="education">
                                         <form class="form-horizontal">
                                             <div class="form-group">

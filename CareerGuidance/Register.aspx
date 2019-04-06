@@ -48,20 +48,20 @@
             <div class="body">
                 
                     <div class="msg">Register a new membership</div>
-                    <div class="input-group">
+                    <div class="input-group" style="margin-bottom:-20px;">
                         <span class="input-group-addon">
-                            <i class="material-icons">person</i>
+                            <i class="material-icons" style="margin-bottom: 30px;">person</i>
                         </span>
                         <div class="form-line">      
-                             <asp:TextBox ID="txtName" class="form-control" placeholder="Name Surname" runat="server"></asp:TextBox>
+                             <asp:TextBox ID="txtName" class="form-control" placeholder="Name Surname" runat="server" ></asp:TextBox>
                            </div>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"  ValidationExpression="^[a-zA-Z'@&#.\s]{1,50}$"></asp:RegularExpressionValidator>     
                        
                     </div>
-                    <div class="input-group">
+                    <div class="input-group" style="margin-bottom:0px;">
                         <span class="input-group-addon">
-                            <i class="material-icons">email</i>
+                            <i class="material-icons" style="margin-bottom: 20px;">email</i>
                         </span>
                         <div class="form-line">
                             <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server"></asp:TextBox>
@@ -69,9 +69,9 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter email"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter corect email"  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>                                                                           
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">lock</i>
+                    <div class="input-group" style="margin-bottom:-5px;">
+                        <span class="input-group-addon" >
+                            <i class="material-icons" style="margin-bottom: 67px;">lock</i>
                         </span>
                         <div class="form-line">
                            <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
@@ -81,7 +81,7 @@
                   
                     </div>
                     
-                    <div class="form-group">
+                    <div class="form-group" style="margin-bottom:0px;">
                       
                        
                       <asp:CheckBox ID="terms" runat="server" Text="I read and agree to the terms and conditions" class="filled-in chk-col-pink"/>

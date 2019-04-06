@@ -24,7 +24,8 @@
     <link href="plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+     
 </head>
 <body  class="login-page">
     <form id="form1" runat="server">
@@ -44,19 +45,21 @@
                         <div class="form-line">
                             <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server" required="required"></asp:TextBox>
                         </div>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter email"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter corect email"  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>                                                                           
+                   
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="txtPassword" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-8 p-t-5">
-                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Remember Me</label>
+                       
                         </div>
                         <div class="col-xs-4">
                              <asp:Button ID="btn_login" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Login" OnClick="btn_login_Click"  />
@@ -70,6 +73,7 @@
                             <a href="ForgotPassword.aspx">Forgot Password?</a>
                         </div>
                     </div>
+                 
                 
             </div>
         </div>
@@ -90,6 +94,9 @@
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
     <script src="js/pages/examples/sign-in.js"></script>
+
+
+
     </form>
 </body>
 </html>

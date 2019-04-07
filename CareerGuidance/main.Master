@@ -29,7 +29,7 @@
         
         <!-- NavBar Starts -->
          
-          <div class="page-loader-wrapper">
+      <div class="page-loader-wrapper">
         <div class="loader">
             <div class="preloader">
                 <div class="spinner-layer pl-red">
@@ -190,19 +190,11 @@
     <section>
         <!-- Left Sidebar -->
         <aside id="leftsidebar" class="sidebar">
-            <!-- User Info -->
-            <div class="user-info">
-              
-                <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
-
-                </div>
-            </div>
-            <!-- #User Info -->
+            
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+                  
                     <li>
                         <a href="index.aspx">
                             <i class="material-icons">home</i>
@@ -243,10 +235,7 @@
             <!-- #Menu -->
             <!-- Footer -->
             <div class="legal">
-                <a href="login.aspx">
-                    <button type="button" class="btn bg-grey waves-effect" style="width:inherit">
-                     <i class="material-icons">home</i><span>Sign Out</span>
-                 </button></a>
+                    <asp:Button ID="btn_logout" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Logout" OnClick="btn_logout_Click"  />
             </div>
             <!-- #Footer -->
         </aside>
@@ -255,7 +244,6 @@
     </section>
 
 
-        <!-- NavBar Ends -->
 
 
 
@@ -266,12 +254,6 @@
             </asp:ContentPlaceHolder>
         </div>
 
-        <!-- Footer Starts -->
-         
-          
-
-        <!-- Footer Ends -->
-        
 
     </form>
      <!-- Jquery Core Js -->

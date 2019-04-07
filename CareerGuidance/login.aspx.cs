@@ -53,7 +53,7 @@ namespace CareerGuidance
                         Session["usrname"] = usrname;
                         Session["usremail"] = emailid;
 
-                        Response.Redirect("index.aspx");
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
 
                     }
                     else

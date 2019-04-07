@@ -22,28 +22,33 @@ namespace CareerGuidance
                 if (Session["usrid"] == null)
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You Have to login before accessing this page');window.location ='login.aspx';", true);
+                    
                 }
                 else
                 {
+                    string userid = Convert.ToString(Session["usrid"]);
+                    string usrname = Convert.ToString(Session["usrname"]);
+                    string usremail = Convert.ToString(Session["usremail"]);
 
+                    DataSet dsusrdata = objuserDAL.userdata(userid);
+
+                    txtEmail.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Email"]);
+                    txtPhone.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Phone"]);
+                    txtLocation.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Location"]);
+                    txtJobRole.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["JobRole"]);
+                    txtExperience.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Experience"]);
+                    txtSkills.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Skill"]);
+                    txtPassion.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Passion"]);
+                    txtInterest.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Interest"]);
+
+                    Session["Interest"] = txtInterest.Text;
+                    Session["Passion"] = txtPassion.Text;
+                    Session["Location"] = txtLocation.Text;
+                    Session["Skill"] = txtSkills.Text;
+                    Session["JobRole"] = txtJobRole.Text;
 
                 }
 
-                string userid = Convert.ToString(Session["usrid"]);
-                string usrname = Convert.ToString(Session["usrname"]);
-                string usremail = Convert.ToString(Session["usremail"]);
-
-                DataSet dsusrdata = objuserDAL.userdata(userid);
-
-
-                txtEmail.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Email"]);
-                txtPhone.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Phone"]);
-                txtLocation.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Location"]);
-                txtJobRole.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["JobRole"]);
-                txtExperience.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Experience"]);
-                txtSkills.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Skill"]);
-                txtPassion.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Passion"]);
-                txtInterest.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Interest"]);
             }
            
 
@@ -68,5 +73,8 @@ namespace CareerGuidance
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Your Profile has been updated Successfully');window.location ='profile.aspx';", true);
 
         }
+
+
+
     }
 }

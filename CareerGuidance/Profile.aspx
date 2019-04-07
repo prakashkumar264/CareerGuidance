@@ -6,6 +6,9 @@
       <section class="content">
         <div class="container-fluid">
             <div class="row clearfix">
+
+
+                <%--SideBar--%>
                 <div class="col-xs-12 col-sm-3">
                     <div class="card profile-card">
                         <div class="profile-header">&nbsp;</div>
@@ -14,8 +17,8 @@
                                 <img src="images/user-lg.jpg" alt="AdminBSB - Profile Image" />
                             </div>
                             <div class="content-area">
-                                <h3>Marc K. Hammond</h3>
-                                <p>Web Software Developer</p>
+                                <h3><%:Session["usrname"]%></h3>
+                                <p style="text-align:center;"><%:Session["JobRole"]%></p>
                                
                             </div>
                         </div>
@@ -43,7 +46,7 @@
                                         Location
                                     </div>
                                     <div class="content">
-                                        Malibu, California
+                                        <%:Session["Location"]%>
                                     </div>
                                 </li>
                                 <li>
@@ -52,25 +55,34 @@
                                         Skills
                                     </div>
                                     <div class="content">
-                                        <span class="label bg-red">UI Design</span>
-                                        <span class="label bg-teal">JavaScript</span>
-                                        <span class="label bg-blue">PHP</span>
-                                        <span class="label bg-amber">Node.js</span>
+                                        <%:Session["Skill"]%>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="title">
                                         <i class="material-icons">notes</i>
-                                        Description
+                                        Interest 
                                     </div>
                                     <div class="content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.
+                                        <%:Session["Interest"]%>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <i class="material-icons">notes</i>
+                                        Passion 
+                                    </div>
+                                    <div class="content">
+                                        <%:Session["Passion"]%>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                
+                
+                <%--Main Information--%>
                 <div class="col-xs-12 col-sm-9">
                     <div class="card">
                         <div class="body">
@@ -269,122 +281,75 @@
 
                                     <%--Education Details--%>
 									<div role="tabpanel" class="tab-pane fade in" id="education">
-                                        <form class="form-horizontal">
+                                        
                                             <div class="form-group">
-                                                <label for="NameSurname" class="col-sm-2 control-label">High School Name</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="NameSurname" name="NameSurname" placeholder="Name Surname" value="Marc K. Hammond" required>
+                                                        <asp:TextBox ID="txtTenth" class="form-control" placeholder="10th Std. Marks" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                             <div class="form-group">                                                
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txttwelth" class="form-control" placeholder="12th Std. Marks" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="Email" class="col-sm-2 control-label">Marks Obtained in High School</label>
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" value="example@example.com" required>
+                                                       <asp:TextBox ID="txtUGMarks" class="form-control" placeholder="UnderGradaute Marks" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="InputExperience" class="col-sm-2 control-label">UnderGraduate College</label>
-
+                                            <div class="form-group">                                              
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                         <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" value="example@example.com" required>
+                                                       <asp:TextBox ID="txtGMarks" class="form-control" placeholder="Graduate Marks" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Stream in Undergraduate</label>
-
+                                            <div class="form-group">                                                
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputSkills" name="InputSkills" placeholder="Skills">
+                                                        <asp:TextBox ID="txtUGStream" class="form-control" placeholder="Undergraduate Stream" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <div class="form-group">                                                
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtGSTream" class="form-control" placeholder="Graduate Stream" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+											<div class="form-group">                                               
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                         <asp:TextBox ID="txtProfession" class="form-control" placeholder="Profession" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
 											<div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Percentage/C.G.P.A. Obtained in Undergraduate College</label>
-
                                                 <div class="col-sm-10">
                                                     <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputPassion" name="InputPassion" placeholder="Passion">
-                                                    </div>
-                                                </div>
-                                            </div>
-											 <div class="form-group">
-                                                <label for="InputExperience" class="col-sm-2 control-label">Graduate College</label>
-
-                                                <div class="col-sm-10">
-                                                    <div class="form-line">
-                                                         <input type="text" class="form-control" id="Email" name="Email" placeholder="Email" value="example@example.com" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Stream in Graduation</label>
-
-                                                <div class="col-sm-10">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputSkills" name="InputSkills" placeholder="Skills">
-                                                    </div>
-                                                </div>
-                                            </div>
-
-											<div class="form-group">
-                                                <label for="InputSkills" class="col-sm-2 control-label">Percentage/C.G.P.A. Obtained in Graduate College</label>
-
-                                                <div class="col-sm-10">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" id="InputPassion" name="InputPassion" placeholder="Passion">
+                                                        <asp:TextBox ID="txtOtherEducation" class="form-control" placeholder="Other Education" runat="server"></asp:TextBox>
                                                     </div>
                                                 </div>
                                             </div>
 
 
-                                          
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-2 col-sm-10">
-                                                    <button type="submit" class="btn btn-danger">SUBMIT</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            <asp:Button ID="btn_education_update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"   />
+
+                                      
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade in" id="change_password_settings">
-                                        <form class="form-horizontal">
-                                            <div class="form-group">
-                                                <label for="OldPassword" class="col-sm-3 control-label">Old Password</label>
-                                                <div class="col-sm-9">
-                                                    <div class="form-line">
-                                                        <input type="password" class="form-control" id="OldPassword" name="OldPassword" placeholder="Old Password" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="NewPassword" class="col-sm-3 control-label">New Password</label>
-                                                <div class="col-sm-9">
-                                                    <div class="form-line">
-                                                        <input type="password" class="form-control" id="NewPassword" name="NewPassword" placeholder="New Password" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="NewPasswordConfirm" class="col-sm-3 control-label">New Password (Confirm)</label>
-                                                <div class="col-sm-9">
-                                                    <div class="form-line">
-                                                        <input type="password" class="form-control" id="NewPasswordConfirm" name="NewPasswordConfirm" placeholder="New Password (Confirm)" required>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <div class="col-sm-offset-3 col-sm-9">
-                                                    <button type="submit" class="btn btn-danger">SUBMIT</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <%--Reset Password--%>
+                                    <div role="tabpanel" class="tab-pane fade in" id="change_password_settings">
+                                       
+                                            
+                                       
                                     </div>
                                 
 

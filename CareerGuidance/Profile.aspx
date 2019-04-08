@@ -37,7 +37,7 @@
                                         Education
                                     </div>
                                     <div class="content">
-                                        B.S. in Computer Science from the University of Tennessee at Knoxville
+                                        <%:Session["Education"]%>
                                     </div>
                                 </li>
                                 <li>
@@ -88,8 +88,7 @@
                         <div class="body">
                             <div>
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                                    <li role="presentation"><a href="#profile_settings" aria-controls="settings" role="tab" data-toggle="tab">Profile Settings</a></li>
+                                    <li role="presentation" class="active"><a href="#profile_settings" aria-controls="settings" role="tab" data-toggle="tab">Profile Settings</a></li>
 									<li role="presentation"><a href="#education" aria-controls="settings" role="tab" data-toggle="tab">Education</a></li>
                                     <li role="presentation"><a href="#change_password_settings" aria-controls="settings" role="tab" data-toggle="tab">Change Password</a></li>
 
@@ -97,123 +96,9 @@
 
                                 <div class="tab-content">
 
-                                   <%-- Profile Wall--%>
-                                    <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                        <div class="panel panel-default panel-post">
-                                            <div class="panel-heading">
-                                                <div class="media">
-                                                    <div class="media-left">
-                                                        <a href="#">
-                                                            <img src="../../images/user-lg.jpg" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">
-                                                            <a href="#">Marc K. Hammond</a>
-                                                        </h4>
-                                                        Shared publicly - 26 Oct 2018
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post">
-                                                    <div class="post-heading">
-                                                        <p>I am a very simple wall post. I am good at containing <a href="#">#small</a> bits of <a href="#">#information</a>. I require little more information to use effectively.</p>
-                                                    </div>
-                                                    <div class="post-content">
-                                                        <img src="../../images/profile-post-image.jpg" class="img-responsive" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">thumb_up</i>
-                                                            <span>12 Likes</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">comment</i>
-                                                            <span>5 Comments</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">share</i>
-                                                            <span>Share</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="form-group">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" placeholder="Type a comment" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="panel panel-default panel-post">
-                                            <div class="panel-heading">
-                                                <div class="media">
-                                                    <div class="media-left">
-                                                        <a href="#">
-                                                            <img src="../../images/user-lg.jpg" />
-                                                        </a>
-                                                    </div>
-                                                    <div class="media-body">
-                                                        <h4 class="media-heading">
-                                                            <a href="#">Marc K. Hammond</a>
-                                                        </h4>
-                                                        Shared publicly - 01 Oct 2018
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="post">
-                                                    <div class="post-heading">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                    </div>
-                                                    <div class="post-content">
-                                                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/10r9ozshGVE" frameborder="0" allowfullscreen=""></iframe>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="panel-footer">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">thumb_up</i>
-                                                            <span>125 Likes</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">comment</i>
-                                                            <span>8 Comments</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="material-icons">share</i>
-                                                            <span>Share</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="form-group">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control" placeholder="Type a comment" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     
                                     <%--Basic Profile Data--%>
-                                    <div role="tabpanel" class="tab-pane fade in" id="profile_settings">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="profile_settings">
                                       
                                             
                                             <div class="form-group">
@@ -338,18 +223,62 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                           <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtHighSchool" class="form-control" placeholder="High School" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtUGSchool" class="form-control" placeholder="UG School" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtGSchool" class="form-control" placeholder="Graduate College" runat="server"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                           </div>
 
 
-                                            <asp:Button ID="btn_education_update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"   />
+                                            <asp:Button ID="btn_education_update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update" OnClick="Btn_education_update"  />
 
                                       
                                     </div>
 
                                     <%--Reset Password--%>
                                     <div role="tabpanel" class="tab-pane fade in" id="change_password_settings">
-                                       
-                                            
-                                       
+                                       <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtoldpassword" class="form-control" placeholder="Old Password" runat="server" TextMode="Password" required="required"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                       </div>
+                                        <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtNewPass" class="form-control" placeholder="New Password" runat="server" TextMode="Password" required="required"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                             <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtNewPass" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"  ValidationExpression="^.*(?=.{8,})(?=.*[\d])(?=.*[\W]).*$"></asp:RegularExpressionValidator>                                                                           
+                  
+                                       </div>
+                                        <div class="form-group">
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <asp:TextBox ID="txtNewREPass" class="form-control" placeholder="Renter New Password" runat="server" TextMode="Password" required="required"></asp:TextBox>
+                                                    </div>
+                                                </div>
+                                       </div>
+
+                                         <asp:Button ID="btn_password" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Change Password" OnClick="Btn_password_update"  />
+
                                     </div>
                                 
 

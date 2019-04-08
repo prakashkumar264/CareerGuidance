@@ -41,6 +41,7 @@ namespace CareerGuidance
                 {
                     string passentered = txtPassword.Text;
                     string passDB = Convert.ToString(dslogin.Tables[0].Rows[0]["Password"]);
+                    Session["passDB"] = passDB;
 
                     bool flag = Helper.VerifyHash(passentered, "SHA512", passDB);
                     if (flag == true)

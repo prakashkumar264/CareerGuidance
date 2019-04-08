@@ -11,7 +11,21 @@ namespace CareerGuidance
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                if (Session["usrid"] == null)
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You Have to login before accessing this page');window.location ='login.aspx';", true);
 
+                }
+                else
+                {
+                    string userid = Convert.ToString(Session["usrid"]);
+                    string usrname = Convert.ToString(Session["usrname"]);
+                    string usremail = Convert.ToString(Session["usremail"]);
+                }
+
+            }
         }
     }
 }

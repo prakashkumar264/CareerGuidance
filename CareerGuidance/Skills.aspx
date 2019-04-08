@@ -42,61 +42,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
                                     <tr>
-                                        
                                         <td style="text-align:center">Python</td>
+                                        <td style="text-align:center">5</td>
                                         <td style="text-align:center">
-										     
-										</td>
-                                        <td style="text-align:center">
-											<a href="SkillEdit.aspx" type="button" class="btn bg-orange waves-effect" style="width:inherit">
-												 <i class="material-icons">mode_edit</i><span>Edit</span>
-											</a>
+                                              <asp:Button ID="btn_edit" class="btn btn-lg bg-orange waves-effect"  style="width:inherit" runat="server" Text="Edit" />
 										</td>
 									     <td style="text-align:center">
-											<a href="SkillDelete.aspx" type="button" class="btn bg-red waves-effect" style="width:inherit">
-												 <i class="material-icons">delete</i><span>Delete</span>
-											</a>
+                                              <asp:Button ID="btn_delete" class="btn btn-lg bg-red waves-effect"  style="width:inherit" runat="server" Text="Delete"  />
 										</td>
                                     </tr>
-                                    <tr>
-                                        
-                                        <td style="text-align:center">C++</td>
-                                        <td style="text-align:center">
-										     
-										</td>
-                                         <td style="text-align:center">
-											<a href="skills-edit.html" type="button" class="btn bg-orange waves-effect" style="width:inherit">
-												 <i class="material-icons">mode_edit</i><span>Edit</span>
-											</a>
-										</td>
-									     <td style="text-align:center">
-											<a href="skills-delete.html" type="button" class="btn bg-red waves-effect" style="width:inherit">
-												 <i class="material-icons">delete</i><span>Delete</span>
-											</a>
-										</td>
-                                    </tr>
-                                    <tr>
-                                       
-                                        <td style="text-align:center">Java</td>
-                                        <td style="text-align:center">
-										     
-										</td>
-                                         <td style="text-align:center">
-											<a href="skills-edit.html" type="button" class="btn bg-orange waves-effect" style="width:inherit">
-												 <i class="material-icons">mode_edit</i><span>Edit</span>
-											</a>
-										</td>
-									     <td style="text-align:center">
-											<a href="skills-delete.html" type="button" class="btn bg-red waves-effect" style="width:inherit">
-												 <i class="material-icons">delete</i><span>Delete</span>
-											</a>
-										</td>
-                                    </tr>
+                                 
                                     
                                 </tbody>
                             </table>
                         </div>
+
+                            
                     </div>
                 </div>
             </div>

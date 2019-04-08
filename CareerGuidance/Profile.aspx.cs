@@ -72,7 +72,7 @@ namespace CareerGuidance
 
         }
 
-
+        //Profile basic data update
         protected void btn_profile_update(object sender, EventArgs e)
         {
             string userid = Convert.ToString(Session["usrid"]);
@@ -92,7 +92,7 @@ namespace CareerGuidance
 
         }
 
-
+        //User Education Update
         protected void Btn_education_update(object sender, EventArgs e)
         {
             string userid = Convert.ToString(Session["usrid"]);
@@ -115,6 +115,7 @@ namespace CareerGuidance
 
         }
 
+        //User Password Update
         protected void Btn_password_update(object sender, EventArgs e)
         {
             string oldpassword = txtoldpassword.Text;

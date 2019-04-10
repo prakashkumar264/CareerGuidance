@@ -51,6 +51,62 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        //get user specific skill list
+        public DataSet getskillbyid(string skilleditid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@id", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = skilleditid;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getskilldatabyid", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet editskill(string skilleditid, string rating)
+        {
+
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[2];
+
+
+                objSqlParm[0] = new SqlParameter("@id", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = skilleditid;
+
+                objSqlParm[1] = new SqlParameter("@Skillrate", SqlDbType.VarChar,255);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = rating;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "updateuserskill", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+
+        }
+
+        //Get User All skill
         public DataSet getuserskilllist(string userid)
         {
             SqlConnection objSqlConn = new SqlConnection();
@@ -111,7 +167,6 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
-        //Fetch User Skill List
-
+    
     }
 }

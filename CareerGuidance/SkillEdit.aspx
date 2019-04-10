@@ -32,10 +32,10 @@
 						<div class= "row">
 						   <div class="col-md-4" style="text-align:center;">
 						       
-                               <asp:Label ID="skillname" runat="server"></asp:Label>
+                               <asp:Label ID="lblskillname" runat="server"></asp:Label>
 						   </div>
 						   <div class="col-md-4" style="text-align:center;">
-						      <asp:DropDownList runat="server" ID="ddlrating"   AllowSingleDeselect="true"  DataPlaceHolder="Rate Your Skill" ></asp:DropDownList>
+						      <asp:DropDownList runat="server" ID="ddlrating"   AllowSingleDeselect="true"  DataPlaceHolder="Re-Rate Your Skill" ></asp:DropDownList>
 
 						   <br />
 						   <br />
@@ -43,7 +43,7 @@
 							   <i class="material-icons">add_box</i><span>Cancel</span>
 							</a>
 
-                            <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Update"  />
+                            <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Update" OnClick="btn_submit_Click"  />
 						   
 							<br />
 							

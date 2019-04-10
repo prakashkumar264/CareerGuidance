@@ -27,7 +27,7 @@ namespace CareerGuidance
                 {
                     string userid = Convert.ToString(Session["usrid"]);
 
-                    string skilleditid = Convert.ToString(Session["skilleditid"]);
+                     string skilleditid = Convert.ToString(Session["skilleditid"]);
 
                     DataSet dsrating = objskillDAL.getrating();
 
@@ -37,11 +37,25 @@ namespace CareerGuidance
                     ddlrating.DataBind();
 
 
+                    DataSet dsedit = objskillDAL.getskillbyid(skilleditid);
+
+                    lblskillname.Text = Convert.ToString(dsedit.Tables[0].Rows[0]["SkillName"]);
+
 
 
                 }
 
             }
+        }
+
+        protected void btn_submit_Click(object sender, EventArgs e)
+        {
+            string skilleditid = Convert.ToString(Session["skilleditid"]);
+            string rating = ddlrating.SelectedValue;
+
+            DataSet dsedit = objskillDAL.editskill(skilleditid, rating);
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Skill Updated Successfullu');window.location ='Skills.aspx';", true);
         }
     }
 }

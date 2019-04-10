@@ -3,7 +3,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>H-Code | shared on themelock.com</title>
+        <title>Register | Upgrowth</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -14,20 +14,15 @@
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-        <!-- animation --> 
-        <link rel="stylesheet" href="css2/animate.css" />
-        <!-- bootstrap -->              
-        <link rel="stylesheet" href="css2/bootstrap.css" />
-        <!-- et line icon -->           
-        <link rel="stylesheet" href="css2/et-line-icons.css" />
-        <!-- font-awesome icon -->      
-        <link rel="stylesheet" href="css2/font-awesome.min.css" />
-        <!-- revolution slider -->      
  
-        <link rel="stylesheet" href="css2/text-effect.css" />
-        <!-- common -->                 
-        <link rel="stylesheet" href="css2/style.css" />
-        <!-- responsive -->             
+
+        <link rel="stylesheet" href="css2/animate.css" />         
+        <link rel="stylesheet" href="css2/bootstrap.css" />        
+        <link rel="stylesheet" href="css2/et-line-icons.css" />    
+        <link rel="stylesheet" href="css2/font-awesome.min.css" />    
+ 
+        <link rel="stylesheet" href="css2/text-effect.css" />            
+        <link rel="stylesheet" href="css2/style.css" />          
         <link rel="stylesheet" href="css2/responsive.css" />
   
 
@@ -95,15 +90,14 @@
         <section class="content-top-margin page-title page-title-small border-bottom-light border-top-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
-                        <!-- page title -->
-                        <h1 class="black-text">Register</h1>
-                        <!-- end page title -->
+                    <div class="col-md-4 col-sm-12" >
+
                     </div>
-                    <div class="col-md-4 col-sm-12 breadcrumb text-uppercase wow fadeInUp xs-display-none" data-wow-duration="600ms">
-                        <!-- breadcrumb -->
-                        
-                        <!-- end breadcrumb -->
+                    <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
+                        <h1 style="text-align:center;" class="black-text">Register</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-wow-duration="600ms">
+
                     </div>
                 </div>
             </div>
@@ -112,47 +106,45 @@
 
         <!-- content section -->
         <section class="bg-gray wow fadeIn" style="margin-bottom:-60px; ">
-            <div class="container">
+            <div class="container" style="margin-top:-19px;">
                 <div class="row">
                     <div class="col-md-5 col-sm-8 col-xs-11 center-col xs-no-padding">
             
                             <div class="form-group no-margin-bottom">
-                                <!-- label  -->
-                                <label class="text-uppercase">Username</label>
-                                <!-- end label  -->
+                                
                                 <!-- input  -->
-                                <asp:TextBox ID="txtName" class="form-control" placeholder="Name Surname" runat="server" ></asp:TextBox>
+                                <asp:TextBox style="text-transform:none;" ID="txtName" class="input-round big-input" placeholder="Name Surname" runat="server" ></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                              <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"></asp:RequiredFieldValidator>
                              <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"  ValidationExpression="^[a-zA-Z'@&#.\s]{1,50}$"></asp:RegularExpressionValidator>  
                             <div class="form-group no-margin-bottom">
                                 <!-- label  -->
-                                <label class="text-uppercase">Email</label>
+                               
                                 <!-- end label  -->
                                 <!-- input  -->
-                                 <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server"></asp:TextBox>
+                                 <asp:TextBox style="text-transform:none;" ID="txtEmail" class="input-round big-input" placeholder="Email Address" runat="server"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                              <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter email"></asp:RequiredFieldValidator>
                              <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter corect email"  ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>      
-                            <div class="form-group no-margin-bottom">
+                            <div class="form-group no-margin-bottom" style="margin-bottom: -20px !important">
                                 <!-- label  -->
-                                <label class="text-uppercase">Password</label>
+                            
                                 <!-- end label  -->
                                 <!-- input  -->
-                                <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server"></asp:TextBox>
+                                <asp:TextBox style="text-transform:none;" ID="txtPassword" TextMode="Password" class="input-round big-input" placeholder="Password" runat="server"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"></asp:RequiredFieldValidator>
                             <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtPassword" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"  ValidationExpression="^.*(?=.{8,})(?=.*[\d])(?=.*[\W]).*$"></asp:RegularExpressionValidator>
                               
-                            <div class="form-group no-margin-bottom">
+                            <div class="form-group no-margin-bottom" style="margin-bottom: -20px !important">
                                 <!-- label  -->
-                                <label class="text-uppercase">Re Password</label>
+                               
                                 <!-- end label  -->
                                 <!-- input  -->
-                                <asp:TextBox ID="txtRePass" TextMode="Password" class="form-control" placeholder="Re Password" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtRePass" style="text-transform:none;" TextMode="Password" class="input-round big-input" placeholder="Re Password" runat="server"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtRePass" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"></asp:RequiredFieldValidator>
@@ -160,9 +152,9 @@
                               
                            
 
-                             <div class="form-group no-margin-bottom">
+                             <div class="form-group no-margin-bottom" style="margin-bottom: -20px !important">
                                 <!-- label  -->
-                                <label>
+                                <label style="margin-bottom: -20px !important">
 
                                     <asp:CheckBox ID="terms" runat="server" Text="I read and agree to the"  />&nbsp;<a href="termsandconditions.aspx" >Terms and Conditions</a>
                                       <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Required" ClientValidationFunction = "ValidateCheckBox"></asp:CustomValidator>
@@ -171,6 +163,8 @@
 
                              <asp:Button ID="btn_register" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Register" OnClick="btn_register_Click"  />
                      
+                        <br />
+                        <br />
 						
                     </div>
                 </div>

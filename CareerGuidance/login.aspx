@@ -6,7 +6,7 @@
 <!doctype html>
 <html class="no-js" lang="en" style="position: relative; min-height: 100%;">
     <head>
-        <title>H-Code | shared on themelock.com</title>
+        <title>Login | Upgrowth</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -93,18 +93,18 @@
         <section class="content-top-margin page-title page-title-small border-bottom-light border-top-light">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
-                        <!-- page title -->
-                        <h1 class="black-text">Login</h1>
-                        <!-- end page title -->
+                    <div class="col-md-4 col-sm-12" >
+
                     </div>
-                    <div class="col-md-4 col-sm-12 breadcrumb text-uppercase wow fadeInUp xs-display-none" data-wow-duration="600ms">
-                        <!-- breadcrumb -->
-                        
-                        <!-- end breadcrumb -->
+                    <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
+                        <h1 style="text-align:center;" class="black-text">Login</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-wow-duration="600ms">
+
                     </div>
                 </div>
-            </div>
+             </div>
+            
         </section>
         <!-- end head section -->
 
@@ -116,10 +116,10 @@
                        <form id="form1" runat="server">
                             <div class="form-group no-margin-bottom">
                                 <!-- label  -->
-                                <label for="username" class="text-uppercase">Username</label>
+                               
                                 <!-- end label  -->
                                 <!-- input  -->
-                                <asp:TextBox ID="txtEmail" class="form-control" placeholder="Email Address" runat="server" required="required"></asp:TextBox>
+                                <asp:TextBox style="text-transform:none;" ID="txtEmail" class="input-round big-input" placeholder="Email Address" runat="server" required="required"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                               
@@ -127,16 +127,16 @@
 								
                             <div class="form-group no-margin-bottom">
                                 <!-- label  -->
-                                <label for="password" class="text-uppercase">Password</label>
+                                
                                 <!-- end label  -->
                                 <!-- input  -->
-                                 <asp:TextBox ID="txtPassword" TextMode="Password" class="form-control" placeholder="Password" runat="server" required="required"></asp:TextBox>
+                                 <asp:TextBox style="text-transform:none;" ID="txtPassword" TextMode="Password" class="input-round big-input" placeholder="Password" runat="server" required="required"></asp:TextBox>
                                 <!-- end input  -->
                             </div>
                             <asp:Button ID="btn_login" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Login" OnClick="btn_login_Click"  />
-                            <a href="forgotpassword.aspx" class="display-block text-uppercase">Forgot Password?</a>
+                           
                         </form>
-<br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br />
                     </div>
                 </div>
             </div>

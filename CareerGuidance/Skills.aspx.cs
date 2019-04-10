@@ -40,7 +40,7 @@ namespace CareerGuidance
                     }
                     else  if(deleteid > 0)
                     {
-                        Session["skilldeleteid"] = id;
+                        Session["skilldeleteid"] = deleteid;
                         Response.Redirect("SkillDelete.aspx");
 
                     }

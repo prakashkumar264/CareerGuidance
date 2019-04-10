@@ -21,8 +21,9 @@ namespace CareerGuidance
                 else
                 {
                     string userid = Convert.ToString(Session["usrid"]);
-                    string usrname = Convert.ToString(Session["usrname"]);
-                    string usremail = Convert.ToString(Session["usremail"]);
+
+
+                    string skilleditid = Convert.ToString(Session["skilldeleteid"]);
                 }
 
             }

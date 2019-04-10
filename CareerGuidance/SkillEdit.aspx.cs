@@ -1,5 +1,8 @@
-﻿using System;
+﻿using CareerGuidanceDAL;
+using CareerGuidanceEntity;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -9,6 +12,8 @@ namespace CareerGuidance
 {
     public partial class SkillEdit : System.Web.UI.Page
     {
+        SkillEntity objskillEntity = new SkillEntity();
+        SkillDAL objskillDAL = new SkillDAL();
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -21,8 +26,19 @@ namespace CareerGuidance
                 else
                 {
                     string userid = Convert.ToString(Session["usrid"]);
-                    string usrname = Convert.ToString(Session["usrname"]);
-                    string usremail = Convert.ToString(Session["usremail"]);
+
+                    string skilleditid = Convert.ToString(Session["skilleditid"]);
+
+                    DataSet dsrating = objskillDAL.getrating();
+
+                    ddlrating.DataTextField = "Rating";
+                    ddlrating.DataValueField = "id";
+                    ddlrating.DataSource = dsrating;
+                    ddlrating.DataBind();
+
+
+
+
                 }
 
             }

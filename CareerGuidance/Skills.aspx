@@ -41,9 +41,9 @@
                                         <th></th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody runat="server" id="userskillaction">
                                     
-                                    <tr>
+                               <%--     <tr >
                                         <td style="text-align:center">Python</td>
                                         <td style="text-align:center">5</td>
                                         <td style="text-align:center">
@@ -52,8 +52,9 @@
 									     <td style="text-align:center">
                                               <asp:Button ID="btn_delete" class="btn btn-lg bg-red waves-effect"  style="width:inherit" runat="server" Text="Delete"  />
 										</td>
+
                                     </tr>
-                                 
+                                 --%>
                                     
                                 </tbody>
                             </table>

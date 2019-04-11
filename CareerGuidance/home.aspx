@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>H-Code | shared on themelock.com</title>
+    <title>UpGrowth</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                    <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -52,7 +52,7 @@
                             <ul id="accordion" class="nav navbar-nav navbar-right panel-group">
                          
                                 <li class="dropdown panel">
-                                    <a href="#" >Home <i class="fa fa-angle-down"></i></a>
+                                    <a href="home.aspx" >Home <i class="fa fa-angle-down"></i></a>
                                 </li>
                                
 								 <li class="dropdown panel">
@@ -524,96 +524,7 @@
         
         <!-- footer -->
         <footer>
-            <div class=" bg-white footer-top">
-                <div class="container">
-                    <div class="row margin-four">
-                        <!-- phone -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">123-456-7890</h6></div>
-                        <!-- end phone -->
-                        <!-- address -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">Victoria, United States</h6></div>
-                        <!-- end address -->
-                        <!-- email -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:no-reply@domain.com" class="black-text">no-reply@domain.com</a></h6></div>
-                        <!-- end email -->
-                    </div>
-                </div>
-            </div>
-            <div class="container footer-middle">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 footer-link1 xs-display-none">
-                        <!-- headline -->
-                        <h5>About Us</h5>
-                        <!-- end headline -->
-                        <!-- text -->
-                        <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <!-- end text -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3">
-                        <!-- headline -->
-                        <h5>Company</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">About Company</a></li>
-                            <li><a href="#">What We Do</a></li>
-                            <li><a href="#">What We Think</a></li>
-                            <li><a href="#">Careers</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link3">
-                        <!-- headline -->
-                        <h5>Services</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Copywriting</a></li>
-                            <li><a href="#">Online Marketing</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link4">
-                        <!-- headline -->
-                        <h5>Introduction</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">Team Members</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Our Clients</a></li>
-                            <li><a href="#">Careers With Us</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                </div>
-                <div class="wide-separator-line bg-mid-gray no-margin-lr margin-three no-margin-bottom"></div>
-                <div class="row margin-four no-margin-bottom">
-                    <div class="col-md-6 col-sm-12 sm-text-center sm-margin-bottom-four">
-                        <!-- link -->
-                        <ul class="list-inline footer-link text-uppercase">
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-6 col-sm-12 footer-social text-right sm-text-center">
-                        <!-- social media link -->
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
-                        <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                        <!-- end social media link -->
-                    </div>
-                </div>
-            </div>
+            
             <div class="container-fluid bg-dark-gray footer-bottom">
                 <div class="container">
                     <div class="row margin-three">
@@ -624,14 +535,14 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images2/logo-light-gray.png" alt="" /></a>
+                            <a href="#"><img src="images2/logo-light-gray.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>
                 </div>
             </div>
             <!-- scroll to top -->
-            <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+           
             <!-- scroll to top End... -->
         </footer>
         <!-- end footer -->

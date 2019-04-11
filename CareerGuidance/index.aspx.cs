@@ -12,9 +12,19 @@ namespace CareerGuidance
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string usrid = Convert.ToString(Session["usrid"]);
-            string usrname = Convert.ToString(Session["usrname"]);
-            string usremail = Convert.ToString(Session["usremail"]);
+
+            if (Session["usrid"] == null)
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You Have to login before accessing this page');window.location ='login.aspx';", true);
+            }
+            else
+            {
+                string usrid = Convert.ToString(Session["usrid"]);
+                string usrname = Convert.ToString(Session["usrname"]);
+                string usremail = Convert.ToString(Session["usremail"]);
+            }
+
+            
         }
     }
 }

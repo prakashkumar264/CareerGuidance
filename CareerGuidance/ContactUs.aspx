@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
-        <title>H-Code | shared on themelock.com</title>
+        <title>Contact Us | Upgrowth</title>
         <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -86,8 +86,18 @@
 
         <!-- head section -->
         <section class="content-top-margin page-title page-title-small border-top-light">
-            <div class="container">
-                
+             <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12" >
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 wow fadeInUp" data-wow-duration="300ms">
+                        <h1 style="text-align:center;" class="black-text">CONTACT US</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-12" data-wow-duration="600ms">
+
+                    </div>
+                </div>
             </div>
         </section>
         <!-- end head section -->
@@ -103,54 +113,6 @@
             </div>
         </section>
 
-        <section class="wow fadeIn">
-            <div class="container">
-                <div class="row">
-                    <!-- office address -->
-                    <div class="col-md-4 col-sm-4 xs-margin-bottom-ten">
-                        <div class="position-relative"><img src="http://placehold.it/800x416" alt=""/><a class="highlight-button-dark btn btn-very-small view-map no-margin bg-black white-text" href="https://www.google.co.in/maps" target="_blank">View Map</a></div>
-                        <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">London - Head Office</p>
-                        <p>Suite 4 Level 1, 141 Bridge Road<br> London, E2 8DY.</p>
-                        <div class="wide-separator-line bg-mid-gray no-margin-lr"></div>
-                        <p class="black-text no-margin-bottom"><strong>T.</strong> 123 456 7890</p>
-                        <p class="black-text"><strong>E.</strong> <a href="mailto:no-reply@domain.com">no-reply@domain.com</a></p>
-                    </div>
-                    <!-- end office address -->
-                    <!-- office address -->
-                    <div class="col-md-4 col-sm-4 xs-margin-bottom-ten">
-                        <div class="position-relative"><img src="http://placehold.it/800x416" alt=""/><a class="highlight-button-dark btn btn-very-small view-map no-margin bg-black white-text" href="https://www.google.co.in/maps" target="_blank">View Map</a></div>
-                        <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">New York - Office</p>
-                        <p>401 Broadway, 24th Floor<br> New York, NY 10013.</p>
-                        <div class="wide-separator-line bg-mid-gray no-margin-lr"></div>
-                        <p class="black-text no-margin-bottom"><strong>T.</strong> 123 456 7890</p>
-                        <p class="black-text"><strong>E.</strong> <a href="mailto:no-reply@domain.com">no-reply@domain.com</a></p>
-                    </div>
-                    <!-- end office address -->
-                    <!-- office address -->
-                    <div class="col-md-4 col-sm-4">
-                        <div class="position-relative"><img src="http://placehold.it/800x416" alt=""/><a class="highlight-button-dark btn btn-very-small view-map no-margin bg-black white-text" href="https://www.google.co.in/maps" target="_blank">View Map</a></div>
-                        <p class="text-med black-text letter-spacing-1 margin-ten no-margin-bottom text-uppercase font-weight-600 xs-margin-top-five">Los Angeles - Office</p>
-                        <p>2221 Lincoln Blvd<br> 90291 Venice, Los Angeles.</p>
-                        <div class="wide-separator-line bg-mid-gray no-margin-lr"></div>
-                        <p class="black-text no-margin-bottom"><strong>T.</strong> 123 456 7890</p>
-                        <p class="black-text"><strong>E.</strong> <a href="mailto:no-reply@domain.com">no-reply@domain.com</a></p>
-                    </div>
-                    <!-- end office address -->
-                </div>
-            </div>
-        </section>
-
-        <section class="wow fadeIn cover-background" style="background-image:url('http://placehold.it/1902x974');">
-            <div class="opacity-medium bg-dark-gray"></div>
-            <div class="container position-relative">
-                <div class="row">
-                    <div class="col-md-5 col-sm-6 center-col text-center">
-                        <p class="title-large text-uppercase letter-spacing-1 white-text font-weight-600">Let's work together on your next project</p>
-                        <a class="btn-small-white btn btn-medium inner-link" href="#contact-form">Request a free quote</a>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="contact-form" class="wow fadeIn">
             <div class="container">
@@ -161,13 +123,13 @@
                         <p class="text-med">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="col-md-6 col-sm-6  col-md-offset-2">
-                        <form id="contactusform" action="javascript:void(0)" method="post">
-                            <div id="success" class="no-margin-lr"></div>
+                        
+                            
                             <input name="name" type="text" placeholder="Your Name" />
                             <input name="email" type="text" placeholder="Your Email"  />
                             <textarea placeholder="Your Message" name="comment"></textarea>
                             <button id="contact-us-button" type="submit" class="highlight-button-dark btn btn-small button xs-margin-bottom-five">Send message</button>
-                        </form>
+                       
                     </div>
                 </div>
             </div>
@@ -177,96 +139,7 @@
 
         <!-- footer -->
 <footer>
-            <div class=" bg-white footer-top">
-                <div class="container">
-                    <div class="row margin-four">
-                        <!-- phone -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-phone small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">123-456-7890</h6></div>
-                        <!-- end phone -->
-                        <!-- address -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-map-pin small-icon black-text"></i><h6 class="black-text margin-two no-margin-bottom">Victoria, United States</h6></div>
-                        <!-- end address -->
-                        <!-- email -->
-                        <div class="col-md-4 col-sm-4 text-center"><i class="icon-envelope small-icon black-text"></i><h6 class="margin-two no-margin-bottom"><a href="mailto:no-reply@domain.com" class="black-text">no-reply@domain.com</a></h6></div>
-                        <!-- end email -->
-                    </div>
-                </div>
-            </div>
-            <div class="container footer-middle">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 footer-link1 xs-display-none">
-                        <!-- headline -->
-                        <h5>About Us</h5>
-                        <!-- end headline -->
-                        <!-- text -->
-                        <p class="footer-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <!-- end text -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4 footer-link2 col-md-offset-3">
-                        <!-- headline -->
-                        <h5>Company</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">About Company</a></li>
-                            <li><a href="#">What We Do</a></li>
-                            <li><a href="#">What We Think</a></li>
-                            <li><a href="#>Careers</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link3">
-                        <!-- headline -->
-                        <h5>Services</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Graphic Design</a></li>
-                            <li><a href="#">Copywriting</a></li>
-                            <li><a href="#">Online Marketing</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-2 col-sm-3 col-xs-4  footer-link4">
-                        <!-- headline -->
-                        <h5>Introduction</h5>
-                        <!-- end headline -->
-                        <!-- link -->
-                        <ul>
-                            <li><a href="#">Team Members</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Our Clients</a></li>
-                            <li><a href="#">Careers With Us</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                </div>
-                <div class="wide-separator-line bg-mid-gray no-margin-lr margin-three no-margin-bottom"></div>
-                <div class="row margin-four no-margin-bottom">
-                    <div class="col-md-6 col-sm-12 sm-text-center sm-margin-bottom-four">
-                        <!-- link -->
-                        <ul class="list-inline footer-link text-uppercase">
-                            <li><a href="#>About</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                        <!-- end link -->
-                    </div>
-                    <div class="col-md-6 col-sm-12 footer-social text-right sm-text-center">
-                        <!-- social media link -->
-                        <a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a target="_blank" href="https://plus.google.com"><i class="fa fa-google-plus"></i></a>
-                        <a target="_blank" href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
-                        <a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
-                        <!-- end social media link -->
-                    </div>
-                </div>
-            </div>
+            
             <div class="container-fluid bg-dark-gray footer-bottom">
                 <div class="container">
                     <div class="row margin-three">
@@ -285,7 +158,7 @@
                 </div>
             </div>
             <!-- scroll to top --> 
-            <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a> 
+           
             <!-- scroll to top End... --> 
         </footer>
         <!-- end footer -->

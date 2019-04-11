@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using CareerGuidanceDAL;
 using CareerGuidanceEntity;
 
@@ -14,26 +16,39 @@ namespace CareerGuidance
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+           
         }
 
         protected void btn_register_Click(object sender, EventArgs e)
         {
             string name = txtName.Text;
-            string password = txtPassword.Text;
+            string pass = txtPassword.Text;
+            string repass = txtRePass.Text;
             string email = txtEmail.Text;
+            string password = Helper.ComputeHash(pass, "SHA512", null);
 
-            try
+            if(pass == repass)
             {
-                DataSet dsregister = objuserDAL.registerform(name,email, password);
+                try
+                {
+                    DataSet dsregister = objuserDAL.registerform(name, email, password);
 
-                Response.Redirect("login.aspx");
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Registered Successfully');window.location ='login.aspx';", true);
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
-            catch (Exception ex)
+            else
             {
-
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Passwords Do not match');", true);
             }
+        }
+           
 
         }
+
+
     }
-}

@@ -13,5 +13,13 @@ namespace CareerGuidance
         {
 
         }
+
+        protected void btn_logout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You have been Logged Out Successfully');window.location ='login.aspx';", true);
+
+        }
     }
 }

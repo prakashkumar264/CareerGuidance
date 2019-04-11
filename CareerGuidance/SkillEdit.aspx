@@ -31,25 +31,20 @@
 						
 						<div class= "row">
 						   <div class="col-md-4" style="text-align:center;">
-						        <h5>Python</h5>
+						       
+                               <asp:Label ID="lblskillname" runat="server"></asp:Label>
 						   </div>
 						   <div class="col-md-4" style="text-align:center;">
-						     <select class="form-control show-tick">
-								<option value="">-- Please select --</option>
-								<option value="10">10</option>
-								<option value="20">20</option>
-								<option value="30">30</option>
-								<option value="40">40</option>
-								<option value="50">50</option>
-						   </select>
+						      <asp:DropDownList runat="server" ID="ddlrating"   AllowSingleDeselect="true"  DataPlaceHolder="Re-Rate Your Skill" ></asp:DropDownList>
+
 						   <br />
 						   <br />
-						    <a type="button" class="btn bg-red waves-effect" style="width:inherit" >
-									 <i class="material-icons">add_box</i><span>Cancel</span>
+						   <a type="button" class="btn bg-red waves-effect" style="width:inherit" href="Skills.aspx" >
+							   <i class="material-icons">add_box</i><span>Cancel</span>
 							</a>
-						   <a type="button" class="btn bg-green waves-effect" style="width:inherit" >
-									 <i class="material-icons">add_box</i><span>Submit</span>
-							</a>
+
+                            <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Update" OnClick="btn_submit_Click"  />
+						   
 							<br />
 							
 							<br />
@@ -60,7 +55,7 @@
         </div>
 
 
-		
+		</div>
     </section>
 
 </asp:Content>

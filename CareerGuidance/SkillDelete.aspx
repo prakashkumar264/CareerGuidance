@@ -29,15 +29,15 @@
 						<br />
 						
 						<div class= "row" style="text-align:center;">
-								<p style="text-align:center;"> Do you want to delete <h5>Python</h5> skill?</p>
+								<p style="text-align:center;"> Do you want to delete <asp:Label ID="lblskillname" runat="server"></asp:Label> skill ?</p>
 						   <br />
 						   <br />
-						    <a type="button" class="btn bg-red waves-effect" style="width:inherit" >
+						    <a type="button" href="Skills.aspx" class="btn bg-red waves-effect" style="width:inherit" >
 									 <i class="material-icons">add_box</i><span>No</span>
 							</a> &nbsp; &nbsp;
-						    <a type="button" class="btn bg-green waves-effect" style="width:inherit" >
-									 <i class="material-icons">add_box</i><span>Yes</span>
-							</a>
+						   
+                         <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Yes" OnClick="btn_submit_Click"  />
+					
 							<br />
 							
 							<br />

@@ -1,4 +1,4 @@
-﻿58using System;
+﻿using System;
 using System.Collections.Specialized;
 using System.Data;
 using System.Text;
@@ -15,10 +15,6 @@ namespace CareerGuidance
         UserMasterDAL objuserDAL = new UserMasterDAL();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
-
-
 
 
         }

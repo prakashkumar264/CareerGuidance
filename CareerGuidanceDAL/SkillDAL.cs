@@ -76,6 +76,30 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        public DataSet getaptiquestions(string skillid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@Skillid", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = skillid;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getAptiQuestions", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
         //get user specific skill list
         public DataSet getskillbyid(string skilleditid)
         {
@@ -173,11 +197,11 @@ namespace CareerGuidanceDAL
 
                 objSqlParm[1] = new SqlParameter("@Skillid", SqlDbType.VarChar, 255);
                 objSqlParm[1].Direction = ParameterDirection.Input;
-                objSqlParm[1].Value = rating;
+                objSqlParm[1].Value = skillid;
 
                 objSqlParm[2] = new SqlParameter("@Skillrate", SqlDbType.VarChar, 255);
                 objSqlParm[2].Direction = ParameterDirection.Input;
-                objSqlParm[2].Value = skillid;
+                objSqlParm[2].Value = rating;
 
                 objSqlParm[3] = new SqlParameter("@SkillName", SqlDbType.VarChar, 255);
                 objSqlParm[3].Direction = ParameterDirection.Input;

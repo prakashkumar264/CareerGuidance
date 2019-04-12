@@ -15,10 +15,23 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <a type="button" class="btn bg-green waves-effect" style="width:inherit" href="AptitudeTest.aspx">
-									 <i class="material-icons">add_box</i><span>Take New Test</span>
-							</a>
+                            
+                            <h5>Recommended Test</h5>
+                               
+                            <asp:DropDownList runat="server" ID="ddluserspecificskill"   AllowSingleDeselect="true"  DataPlaceHolder="Recommend Skill Test" data-live-search="true" ></asp:DropDownList>
+                            <asp:Button ID="btn_subtwo" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_subtwo_Click"    />
+                               
+                            <br /><br /><br />
+                             <h5>Other Test</h5>
+                             <asp:DropDownList runat="server" ID="ddlskill"   AllowSingleDeselect="true"  DataPlaceHolder="Other Test" data-live-search="true" ></asp:DropDownList>
+
+                             <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_submit_Click"    />
                            
+                             <br /><br /><br />
+                            
+                            
+
+
                         </div>
                         <div class="body table-responsive">
                             <table class="table table-bordered">
@@ -33,26 +46,6 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-										<td><a type="button" class="btn bg-blue waves-effect" style="width:inherit" href="aptitudeview.aspx">
-											 <i class="material-icons">add_box</i><span>View</span>
-										</a></td>
-                                    </tr>
-									
-									 <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-										<td><a type="button" class="btn bg-blue waves-effect" style="width:inherit" href="aptitudeview.aspx">
-											 <i class="material-icons">add_box</i><span>View</span>
-										</a></td>
-                                    </tr>
-									
-									 <tr>
                                         <th scope="row">1</th>
                                         <td>Mark</td>
                                         <td>Otto</td>

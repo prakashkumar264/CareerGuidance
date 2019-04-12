@@ -15,8 +15,7 @@ namespace CareerGuidance
         UserMasterDAL objuserDAL = new UserMasterDAL();
         protected void Page_Load(object sender, EventArgs e)
         {
-
-
+            
         }
 
         protected void btn_login_Click(object sender, EventArgs e)

@@ -143,6 +143,17 @@ namespace CareerGuidance
                     Session["crt8"] = Convert.ToString(dsquestions.Tables[0].Rows[7]["CrtAnswer"]);
                     Session["crt9"] = Convert.ToString(dsquestions.Tables[0].Rows[8]["CrtAnswer"]);
                     Session["crt10"] = Convert.ToString(dsquestions.Tables[0].Rows[9]["CrtAnswer"]);
+
+                    Session["ques1"]  = Convert.ToString(dsquestions.Tables[0].Rows[0]["id"]);
+                    Session["ques2"]  = Convert.ToString(dsquestions.Tables[0].Rows[1]["id"]);
+                    Session["ques3"]  = Convert.ToString(dsquestions.Tables[0].Rows[2]["id"]);
+                    Session["ques4"]  = Convert.ToString(dsquestions.Tables[0].Rows[3]["id"]);
+                    Session["ques5"]  = Convert.ToString(dsquestions.Tables[0].Rows[4]["id"]);
+                    Session["ques6"]  = Convert.ToString(dsquestions.Tables[0].Rows[5]["id"]);
+                    Session["ques7"]  = Convert.ToString(dsquestions.Tables[0].Rows[6]["id"]);
+                    Session["ques8"]  = Convert.ToString(dsquestions.Tables[0].Rows[7]["id"]);
+                    Session["ques9"]  = Convert.ToString(dsquestions.Tables[0].Rows[8]["id"]);
+                    Session["ques10"] = Convert.ToString(dsquestions.Tables[0].Rows[9]["id"]);
                 }
 
             }
@@ -151,6 +162,22 @@ namespace CareerGuidance
 
         protected void btn_submit_Click(object sender, EventArgs e)
         {
+            string userid = Convert.ToString(Session["usrid"]);
+            string skillname = Convert.ToString(Session["selectedskillname"]);
+            string skillid = Convert.ToString(Session["selectedskillfortest"]);
+
+            string[] ques = new string[10];
+            ques[0] = Convert.ToString(Session["ques1"]);
+            ques[1] = Convert.ToString(Session["ques2"]);
+            ques[2] = Convert.ToString(Session["ques3"]);
+            ques[3] = Convert.ToString(Session["ques4"]);
+            ques[4] = Convert.ToString(Session["ques5"]);
+            ques[5] = Convert.ToString(Session["ques6"]);
+            ques[6] = Convert.ToString(Session["ques7"]);
+            ques[7] = Convert.ToString(Session["ques8"]);
+            ques[8] = Convert.ToString(Session["ques9"]);
+            ques[9] = Convert.ToString(Session["ques10"]);
+
             string[] ans = new string[10];
             ans[0] = QSONE.SelectedValue;
             ans[1] = QSTWO.SelectedValue;
@@ -178,6 +205,8 @@ namespace CareerGuidance
 
             int counter = 0;
             int i;
+
+            //Calculate score
             for (i = 0; i < 10; i++)
             {
                 if ( ans[i] == crt[i])
@@ -189,8 +218,16 @@ namespace CareerGuidance
                     
                 }
             }
-            
 
+            //Add apti result in Databse
+            for (i = 0; i < 10; i++)
+            {
+                DataSet dsaddaptiresult = objskillDAL.addaptiresult(userid, ques[i], ans[i]);
+            }
+
+            DataSet dsaptiscorecard = objskillDAL.aptiscorecard(userid, skillid, skillname, counter);
+
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Aptitude Submitted Successfully');window.location ='aptitude.aspx';", true);
 
 
         }

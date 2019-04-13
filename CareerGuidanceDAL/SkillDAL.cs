@@ -76,6 +76,7 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        //get aptitude questions
         public DataSet getaptiquestions(string skillid)
         {
             SqlConnection objSqlConn = new SqlConnection();
@@ -216,6 +217,79 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
-    
+        //Add aptitude Results
+        public DataSet addaptiresult(string userid, string v1, string v2)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+            string questionid = v1;
+            string selectanswer = v2;
+           
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[3];
+
+
+                objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 50);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = userid;
+
+                objSqlParm[1] = new SqlParameter("@questionid", SqlDbType.VarChar, 255);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = questionid;
+
+                objSqlParm[2] = new SqlParameter("@selectanswer", SqlDbType.VarChar, 255);
+                objSqlParm[2].Direction = ParameterDirection.Input;
+                objSqlParm[2].Value = selectanswer;
+        
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "addaptiresult", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        //add apti scorecard
+        public DataSet aptiscorecard(string userid, string skillid, string skillname, int counter)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+            
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[4];
+
+
+                objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 255);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = userid;
+
+                objSqlParm[1] = new SqlParameter("@skillid", SqlDbType.VarChar, 255);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = skillid;
+
+                objSqlParm[2] = new SqlParameter("@skillname", SqlDbType.VarChar, 255);
+                objSqlParm[2].Direction = ParameterDirection.Input;
+                objSqlParm[2].Value = skillname;
+
+                objSqlParm[3] = new SqlParameter("@counter", SqlDbType.VarChar, 255);
+                objSqlParm[3].Direction = ParameterDirection.Input;
+                objSqlParm[3].Value = counter;
+
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "aptiscorecard", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
     }
 }

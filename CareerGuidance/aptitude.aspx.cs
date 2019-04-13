@@ -51,8 +51,10 @@ namespace CareerGuidance
         {
             string userid = Convert.ToString(Session["usrid"]);
             string skillid = ddlskill.SelectedValue;
+            string skillname = Convert.ToString(ddlskill.SelectedItem);
 
             Session["selectedskillfortest"] = skillid;
+            Session["selectedskillname"] = skillname;
             Response.Redirect("AptitudeTest.aspx");
         }
 
@@ -60,8 +62,10 @@ namespace CareerGuidance
         {
             string userid = Convert.ToString(Session["usrid"]);
             string skillid = ddluserspecificskill.SelectedValue;
+            string skillname = Convert.ToString(ddluserspecificskill.SelectedItem);
 
             Session["selectedskillfortest"] = skillid;
+            Session["selectedskillname"] = skillname;
             Response.Redirect("AptitudeTest.aspx");
 
 

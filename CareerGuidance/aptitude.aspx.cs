@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -42,6 +43,45 @@ namespace CareerGuidance
                     ddluserspecificskill.DataBind();
 
 
+                    DataSet dsaptilist = objskillDAL.getuseraptilist(userid);
+
+                    if(dsaptilist.Tables[0].Rows.Count == 0)
+                    {
+                        StringBuilder sb = new StringBuilder();
+
+                        sb.Append("<tr>");
+                        sb.Append("    <th scope=\"row\">1</th>");
+                        sb.Append("    <td><b> Python </b></td>");
+                        sb.Append("    <td>25th October, 10:20pm</td>");
+                        sb.Append("    <td> <b> 6 | 10</b></td>");
+                        sb.Append("    <td> <a href=\"#\"   > View </a> ");
+                        sb.Append("</td>");
+                        sb.Append("</tr>");
+
+                        aptilist.InnerHtml = sb.ToString();
+                    }
+                    else
+                    {
+                        StringBuilder sb = new StringBuilder();
+
+                        for (int i = 0; i < dsaptilist.Tables[0].Rows.Count; i++)
+                        {
+                            sb.Append("<tr>");
+                            sb.Append("    <th scope=\"row\">1</th>");
+                            sb.Append("    <td><b>" + dsaptilist.Tables[0].Rows[i]["skillname"] + "</b></td>");
+                            sb.Append("    <td>" + dsaptilist.Tables[0].Rows[i]["Datetaken"] + "</td>");
+                            sb.Append("    <td> <b> " + dsaptilist.Tables[0].Rows[i]["counter"] + " | 10</b></td>");
+                            sb.Append("    <td> <a href=\"aptitudeview.aspx?id=" + dsaptilist.Tables[0].Rows[i]["id"] + "\"   >View</a> ");
+                            sb.Append("</td>");
+                            sb.Append("</tr>");
+                        }
+
+                        aptilist.InnerHtml = sb.ToString();
+                    }
+
+                    
+
+
                 }
 
             }
@@ -70,5 +110,7 @@ namespace CareerGuidance
 
 
         }
+
+
     }
 }

@@ -15,7 +15,10 @@ namespace CareerGuidance
         UserMasterDAL objuserDAL = new UserMasterDAL();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if (!IsPostBack)
+            {
+
+            }
         }
 
         protected void btn_login_Click(object sender, EventArgs e)
@@ -54,11 +57,16 @@ namespace CareerGuidance
                         Session["usrname"] = usrname;
                         Session["usremail"] = emailid;
 
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
+                        Response.Redirect("index.aspx");
+
+                        //ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
+                    
 
                     }
                     else
                     {
+
+
                         ClientScript.RegisterClientScriptBlock(this.GetType(), "s", "window.alert('You Have Entered Wrong Email id or Password!');", true);
 
                         txtPassword.Text = string.Empty;

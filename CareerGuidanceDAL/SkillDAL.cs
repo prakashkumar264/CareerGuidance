@@ -76,6 +76,32 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        //get aptitude result by userid
+        public DataSet getuseraptilist(string userid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 255);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = userid;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getaptilist", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+
+        }
+
         //get aptitude questions
         public DataSet getaptiquestions(string skillid)
         {

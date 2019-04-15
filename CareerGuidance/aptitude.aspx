@@ -39,21 +39,21 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>Date</th>
+                                        <th>Date & Time</th>
                                         <th>Result</th>
 										<th>View</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
+                                <tbody runat="server" ID="aptilist">
+                                  <%--  <tr>
                                         <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td><b>C</b></td>
+                                        <td>25/1/2019 <br /> 19.05.20</td>
+                                        <td> <b> 6 | 10</b></td>
 										<td><a type="button" class="btn bg-blue waves-effect" style="width:inherit" href="aptitudeview.aspx">
-											 <i class="material-icons">add_box</i><span>View</span>
+											View
 										</a></td>
-                                    </tr>
+                                    </tr>--%>
                                   
                                 </tbody>
                             </table>

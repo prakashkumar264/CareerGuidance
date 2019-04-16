@@ -41,7 +41,9 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                    <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a><a class="logo-dark" href="#"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -286,96 +288,7 @@
             </div>
         </section>
         <!-- end counter section -->
-        <!-- portfolio section -->
-        <section id="portfolio" class="grid-wrap work-4col margin-top-section no-margin-top no-padding-bottom wow fadeIn">
-            <div class="container-fluid">
-                <div class="row no-padding">
-                    <!-- section title -->
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title no-padding-bottom">Latest Work</h3>
-                    </div>
-                    <!-- end section title -->
-                    <div class="col-md-3 col-sm-10 margin-three center-col text-center">
-                        <h4 class="gray-text">We are technology leaders and have crafted intuitive and lasting online and mobile experiences for hundreds of associations and non-profits.</h4>
-                    </div>
-                   
-
-                    <div class="grid-gallery overflow-hidden">
-                        <div class="tab-content">
-                            <ul class="masonry-items grid">
-                                <!-- portfolio item -->
-                                <li class="html jquery wordpress">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x600" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="single-project-page1.html">Herbal Beauty Salon</a></h3>
-                                            <p>Branding &amp; Identity</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                                <!-- portfolio item -->
-                                <li class="html magento wordpress">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x1200" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="single-project-page2.html">Tailoring Interior </a></h3>
-                                            <p>Branding &amp; Identity</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                                <!-- portfolio item -->
-                                <li class="jquery magento wordpress">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x600" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="#">Pixflow Studio</a></h3>
-                                            <p>Web &amp; Branding</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                                <!-- portfolio item -->
-                                <li class="wordpress magento jquery">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x1200" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="single-project-page4.html">Kaya Skin Care</a></h3>
-                                            <p>UI Design &amp; Identity</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                                <!-- portfolio item -->
-                                <li class="html jquery">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x600" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="single-project-page5.html">Third Eye Glasses</a></h3>
-                                            <p>Logo &amp; Brochure</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                                <!-- portfolio item -->
-                                <li class="html magento">
-                                    <figure>
-                                        <div class="gallery-img"><a href="#"><img src="http://placehold.it/800x600" alt=""></a></div>
-                                        <figcaption>
-                                            <h3><a href="standard-with-slider.html">Rubber Studio</a></h3>
-                                            <p>Branding &amp; Identity</p>
-                                        </figcaption>
-                                    </figure>
-                                </li>
-                                <!-- end portfolio item -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end portfolio section -->
+  
         
         <!-- services section -->
         <section class="corporate-standards no-padding-bottom wow fadeIn">
@@ -535,7 +448,7 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images2/logo-light-gray.png" alt=""></a>
+                            <a href="#"><img src="images2/logosmall.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>

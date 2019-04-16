@@ -44,7 +44,9 @@
                <div class="row">
                     <!-- logo -->
                      <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                              <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a><a class="logo-dark" href="#"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -184,7 +186,7 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="index.html"><img src="images/logo-light-gray.png" alt=""/></a>
+                            <a href="index.html"><img src="images/logosmall.png" alt=""/></a>
                         </div>
                         <!-- end logo -->
                     </div>

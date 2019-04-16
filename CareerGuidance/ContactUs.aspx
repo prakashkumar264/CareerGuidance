@@ -46,7 +46,9 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                             <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a><a class="logo-dark" href="#"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -107,7 +109,7 @@
             <div class="container-fuild">
                 <div class="row no-margin">
                     <div id="canvas1" class="col-md-12 col-sm-12 no-padding contact-map map">
-                        <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843821917424!2d144.956054!3d-37.817127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1427947693651"></iframe>
+                        <iframe id="map_canvas1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8463001775954!2d73.05287771490043!3d19.02649328711631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c24393d763af%3A0x266652df8009380d!2sBharati+Vidyapeeth+College+of+Engineering%2C+Navi+Mumbai!5e0!3m2!1sen!2sin!4v1555415094163!5m2!1sen!2sin"></iframe>
                     </div>
                 </div>
             </div>
@@ -150,7 +152,7 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images/logo-light-gray.png" alt=""/></a>
+                            <a href="#"><img src="images/logosmall.png" alt=""/></a>
                         </div>
                         <!-- end logo -->
                     </div>

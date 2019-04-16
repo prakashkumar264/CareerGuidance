@@ -286,6 +286,7 @@
     <Content Include="images2\logo-light-medium.png" />
     <Content Include="images2\logo-light.png" />
     <Content Include="images2\logo-white.png" />
+    <Content Include="images2\logosmall.png" />
     <Content Include="images2\maintenance.jpg" />
     <Content Include="images2\navigdots.png" />
     <Content Include="images2\navigdots_bgtile.png" />

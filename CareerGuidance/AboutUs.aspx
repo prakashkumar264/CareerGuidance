@@ -45,7 +45,9 @@
             <div class="container">
                 <div class="row">
                     <!-- logo -->
-                    <div class="col-md-2 pull-left"><a class="logo-light" href="index.html"><img alt="" src="images2/logo-light.png" class="logo" /></a><a class="logo-dark" href="#"><img alt="" src="images2/logo-light.png" class="logo" /></a></div>
+                              <div class="col-md-2 pull-left"><a class="logo-light" href="home.aspx"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a><a class="logo-dark" href="#"><img style="max-width: 175px;
+    height: 42px;" alt="" src="images2/logosmall.png" class="logo" /></a></div>
                     <div class="navbar-header col-sm-8 col-xs-2 pull-right">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
                     </div>
@@ -208,45 +210,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-gray wow fadeIn">
-            <div class="container">
-                <div class="row">
-                    <!-- features item -->
-                    <div class="col-md-4 col-sm-4 text-center wow fadeIn features-2" data-wow-duration="300ms">
-                        <div class="key-person">
-                            <div class="key-person-img"><img src="http://placehold.it/800x1000" alt=""></div>
-                            <div class="key-person-details bg-gray no-border no-padding-bottom"><h5>We love fast music</h5>
-                                <div class="separator-line bg-black"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features item -->
-                    <!-- features item -->
-                    <div class="col-md-4 col-sm-4 text-center wow fadeIn features-2" data-wow-duration="600ms">
-                        <div class="key-person">
-                            <div class="key-person-img"><img src="http://placehold.it/800x1000" alt=""></div>
-                            <div class="key-person-details bg-gray no-border no-padding-bottom"><h5>We love innovation</h5>
-                                <div class="separator-line bg-black"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features item -->
-                    <!-- features item -->
-                    <div class="col-md-4 col-sm-4 text-center wow fadeIn features-2" data-wow-duration="900ms">
-                        <div class="key-person">
-                            <div class="key-person-img"><img src="http://placehold.it/800x1000" alt=""></div>
-                            <div class="key-person-details bg-gray no-border no-padding-bottom"><h5>We love challenges</h5>
-                                <div class="separator-line bg-black"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end features item -->
-                </div>
-            </div>
-        </section>
+        
         
         <section class="cover-background" style="background-image:url('http://placehold.it/1920x1200');">
             <div class="opacity-full bg-dark-gray"></div>
@@ -317,7 +281,7 @@
                         <!-- end copyright -->
                         <!-- logo -->
                         <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images/logo-light-gray.png" alt=""/></a>
+                            <a href="#"><img src="images/logosmall.png" alt=""/></a>
                         </div>
                         <!-- end logo -->
                     </div>

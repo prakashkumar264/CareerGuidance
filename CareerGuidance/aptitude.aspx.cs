@@ -26,6 +26,16 @@ namespace CareerGuidance
                 }
                 else
                 {
+                    var id = Convert.ToInt32(Request.QueryString["id"]);
+                    
+
+                    if (id > 0)
+                    {
+                        Session["aptilistid"] = id;
+                        Response.Redirect("aptitudeview.aspx");
+
+                    }
+                  
                     string userid = Convert.ToString(Session["usrid"]);
 
                     DataSet dsskilllist = objskillDAL.getskilllist();
@@ -71,7 +81,7 @@ namespace CareerGuidance
                             sb.Append("    <td><b>" + dsaptilist.Tables[0].Rows[i]["skillname"] + "</b></td>");
                             sb.Append("    <td>" + dsaptilist.Tables[0].Rows[i]["Datetaken"] + "</td>");
                             sb.Append("    <td> <b> " + dsaptilist.Tables[0].Rows[i]["counter"] + " | 10</b></td>");
-                            sb.Append("    <td> <a href=\"aptitudeview.aspx?id=" + dsaptilist.Tables[0].Rows[i]["id"] + "\"   >View</a> ");
+                            sb.Append("    <td> <a href=\"aptitude.aspx?id=" + dsaptilist.Tables[0].Rows[i]["id"] + "\"   >View</a> ");
                             sb.Append("</td>");
                             sb.Append("</tr>");
                         }
@@ -79,6 +89,7 @@ namespace CareerGuidance
                         aptilist.InnerHtml = sb.ToString();
                     }
 
+                    
                     
 
 

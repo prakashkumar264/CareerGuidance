@@ -3624,8 +3624,8 @@ section.content {
   padding-left: 26px;
   height: 25px;
   line-height: 25px;
-  font-size: 13px;
-  font-weight: normal; }
+  font-size: 14px;
+  font-weight: 500; }
 
 [type="radio"]:checked + label {
   padding-left: 26px;

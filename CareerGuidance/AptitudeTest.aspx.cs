@@ -133,6 +133,7 @@ namespace CareerGuidance
                     QSTEN.Items.FindByText("questenfour").Value = Convert.ToString(dsquestions.Tables[0].Rows[9]["OptFour"]);
                     QSTEN.Items.FindByText("questenfour").Text = Convert.ToString(dsquestions.Tables[0].Rows[9]["OptFour"]);
 
+
                     Session["crt1"] = Convert.ToString(dsquestions.Tables[0].Rows[0]["CrtAnswer"]);
                     Session["crt2"] = Convert.ToString(dsquestions.Tables[0].Rows[1]["CrtAnswer"]);
                     Session["crt3"] = Convert.ToString(dsquestions.Tables[0].Rows[2]["CrtAnswer"]);
@@ -162,6 +163,9 @@ namespace CareerGuidance
 
         protected void btn_submit_Click(object sender, EventArgs e)
         {
+            int counter = 0;
+            int i;
+
             string userid = Convert.ToString(Session["usrid"]);
             string skillname = Convert.ToString(Session["selectedskillname"]);
             string skillid = Convert.ToString(Session["selectedskillfortest"]);
@@ -190,6 +194,14 @@ namespace CareerGuidance
             ans[8] = QSNINE.SelectedValue;
             ans[9] = QSTEN.SelectedValue;
 
+            for (i = 0; i < 10; i++)
+            {
+                if(ans[i] == "")
+                {
+                    ans[i] = "Not Answered";
+                }
+            }
+
             string[] crt = new string[10];
             crt[0] = Convert.ToString(Session["crt1"]);
             crt[1] = Convert.ToString(Session["crt2"]);
@@ -202,9 +214,6 @@ namespace CareerGuidance
             crt[8] = Convert.ToString(Session["crt9"]);
             crt[9] = Convert.ToString(Session["crt10"]);
 
-
-            int counter = 0;
-            int i;
 
             //Calculate score
             for (i = 0; i < 10; i++)
@@ -219,13 +228,15 @@ namespace CareerGuidance
                 }
             }
 
+            string xyz = DateTime.Now.ToString("HH:mm:ss");
+
             //Add apti result in Databse
             for (i = 0; i < 10; i++)
             {
-                DataSet dsaddaptiresult = objskillDAL.addaptiresult(userid, ques[i], ans[i]);
+                DataSet dsaddaptiresult = objskillDAL.addaptiresult(userid, ques[i], ans[i], xyz);
             }
 
-            DataSet dsaptiscorecard = objskillDAL.aptiscorecard(userid, skillid, skillname, counter);
+            DataSet dsaptiscorecard = objskillDAL.aptiscorecard(userid, skillid, skillname, counter, xyz );
 
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Aptitude Submitted Successfully');window.location ='aptitude.aspx';", true);
 

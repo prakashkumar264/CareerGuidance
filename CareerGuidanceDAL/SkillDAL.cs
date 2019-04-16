@@ -51,6 +51,32 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        //get aptitude view list
+        public DataSet getaptianswers(string aptilistid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            string id = aptilistid;
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@id", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = id;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getaptianswers", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
         //delete skill by id
         public DataSet deleteskillbyid(string skilleditid)
         {
@@ -244,17 +270,17 @@ namespace CareerGuidanceDAL
         }
 
         //Add aptitude Results
-        public DataSet addaptiresult(string userid, string v1, string v2)
+        public DataSet addaptiresult(string userid, string v1, string v2, string xyz)
         {
             SqlConnection objSqlConn = new SqlConnection();
             string questionid = v1;
             string selectanswer = v2;
-           
+            string Datetaken = xyz;
 
             objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
             try
             {
-                SqlParameter[] objSqlParm = new SqlParameter[3];
+                SqlParameter[] objSqlParm = new SqlParameter[4];
 
 
                 objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 50);
@@ -268,7 +294,11 @@ namespace CareerGuidanceDAL
                 objSqlParm[2] = new SqlParameter("@selectanswer", SqlDbType.VarChar, 255);
                 objSqlParm[2].Direction = ParameterDirection.Input;
                 objSqlParm[2].Value = selectanswer;
-        
+
+                objSqlParm[3] = new SqlParameter("@Datetaken", SqlDbType.DateTime2);
+                objSqlParm[3].Direction = ParameterDirection.Input;
+                objSqlParm[3].Value = Datetaken;
+
 
                 ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "addaptiresult", objSqlParm);
             }
@@ -280,15 +310,15 @@ namespace CareerGuidanceDAL
         }
 
         //add apti scorecard
-        public DataSet aptiscorecard(string userid, string skillid, string skillname, int counter)
+        public DataSet aptiscorecard(string userid, string skillid, string skillname, int counter, string xyz)
         {
             SqlConnection objSqlConn = new SqlConnection();
-            
+            string Datetaken = xyz;
 
             objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
             try
             {
-                SqlParameter[] objSqlParm = new SqlParameter[4];
+                SqlParameter[] objSqlParm = new SqlParameter[5];
 
 
                 objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 255);
@@ -306,6 +336,10 @@ namespace CareerGuidanceDAL
                 objSqlParm[3] = new SqlParameter("@counter", SqlDbType.VarChar, 255);
                 objSqlParm[3].Direction = ParameterDirection.Input;
                 objSqlParm[3].Value = counter;
+
+                objSqlParm[4] = new SqlParameter("@Datetaken", SqlDbType.DateTime2);
+                objSqlParm[4].Direction = ParameterDirection.Input;
+                objSqlParm[4].Value = Datetaken;
 
 
 

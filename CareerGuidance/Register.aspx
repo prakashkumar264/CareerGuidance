@@ -4,10 +4,7 @@
 <html class="no-js" lang="en">
     <head>
         <title>Register | Upgrowth</title>
-        <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
-        <meta name="keywords" content="">
-        <meta charset="utf-8">
-        <meta name="author" content="ThemeZaa">
+       
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.png">
@@ -162,8 +159,8 @@
                                       <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Required" ClientValidationFunction = "ValidateCheckBox"></asp:CustomValidator>
                                 </label>
                             </div>
-
-                             <asp:Button ID="btn_register" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Register" OnClick="btn_register_Click"  />
+                        <br /><br />
+                             <asp:Button ID="btn_register" class="highlight-button-dark btn btn-medium button xs-margin-bottom-five" runat="server" Text="Register" OnClick="btn_register_Click"  />
                      
                         <br />
                         <br />
@@ -176,17 +173,18 @@
 
         <!-- footer -->
         <footer>
-             <div class="container-fluid bg-dark-gray footer-bottom">
+              <div class="container-fluid bg-dark-gray footer-bottom">
                 <div class="container">
-                    <div class="row margin-three">
+                    <div class="row margin-three" style="margin-top:1.5% !important; margin-bottom: 1.5% !important">
                         <!-- copyright -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2015 H-Code is proudly powered by ThemeZaa.
+                        <div style="padding-top:10px; color:white;" class="col-md-8 col-sm-8 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="Contact.aspx">Contact Us</a> | 
+                                        <a style="color:white;" href="termsandconditions.aspx">Terms and Conditions</a> | <a style="color:white;" href="privacypolicy.aspx" >Privacy Policy</a>
                         </div>
                         <!-- end copyright -->
                         <!-- logo -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="index.html"><img src="images/logosmall.png" alt=""/></a>
+                        <div class="col-md-4 col-sm-4 col-xs-12 footer-logo text-right xs-text-center">
+                            <a href="#"><img style="height:44px; max-width:174px !important;" src="images2/logosmall.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>

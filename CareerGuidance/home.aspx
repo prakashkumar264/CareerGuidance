@@ -5,16 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>UpGrowth</title>
-        <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
-        <meta name="keywords" content="">
-        <meta charset="utf-8">
-        <meta name="author" content="ThemeZaa">
+   
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images2/favicon.png">
-        <link rel="apple-touch-icon" href="images2/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images2/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images2/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="images2/favicon.png" />
+        <link rel="apple-touch-icon" href="images2/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images2/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images2/apple-touch-icon-114x114.png" />
         <link rel="stylesheet" href="css2/animate.css" />
         <link rel="stylesheet" href="css2/bootstrap.css" />
         <link rel="stylesheet" href="css2/et-line-icons.css" />
@@ -89,7 +86,7 @@
 
             <div class="carousel-inner">
                 <div class="item active full-screen">
-                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="fill" style="background-image:url('images2/slider2.jpg');"></div>
                     <div class="opacity-full bg-white display-none xs-display-block"></div>
                     <div class="container">
                         <div class="row">
@@ -97,12 +94,7 @@
                                 <div class="slider-typography">
                                     <div class="slider-text-middle-main">
                                         <div class="slider-text-middle slider-text-middle6 padding-left-right-px wow fadeInUp slider-text">
-                                            <div class="col-md-3 col-sm-5 col-xs-6 text-left animated fadeInUp no-padding">
-                                                <h1>Innovation Through </h1>
-                                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                                <span>We consult on digital strategy & craft meaningful connections with your customers across web.</span>
-                                                <a class="highlight-button btn inner-link no-margin-lr no-margin-bottom" href="#portfolio">Digital Marketing</a>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +106,7 @@
                 <!-- slider item -->
                 <div class="item full-screen">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="fill" style="background-image: url('images2/slider1.jpg') "></div>
                     <div class="opacity-full bg-white display-none xs-display-block"></div>
                     <div class="container">
                         <div class="row">
@@ -122,12 +114,7 @@
                                 <div class="slider-typography">
                                     <div class="slider-text-middle-main">
                                         <div class="slider-text-middle slider-text-middle6 padding-left-right-px wow fadeInUp slider-text">
-                                            <div class="col-md-3 col-sm-5 col-xs-6 text-left animated fadeInUp no-padding">
-                                                <h1>Digital Trend Challenges</h1>
-                                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                                <span>We believe in design, strategy and the ability of technology to transform organizations and lives.</span>
-                                                <a class="highlight-button btn inner-link no-margin-lr no-margin-bottom" href="#portfolio">Digital Marketing</a>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +126,7 @@
                 <!-- slider item -->
                 <div class="item full-screen">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image:url('http://placehold.it/1920x1080');"></div>
+                    <div class="fill" style="background-image:url('images2/slider3.jpg');"></div>
                     <div class="opacity-full bg-white display-none xs-display-block"></div>
                     <div class="container">
                         <div class="row">
@@ -147,12 +134,7 @@
                                 <div class="slider-typography">
                                     <div class="slider-text-middle-main">
                                         <div class="slider-text-middle slider-text-middle6 padding-left-right-px wow fadeInUp slider-text">
-                                            <div class="col-md-3 col-sm-5 col-xs-6 text-left animated fadeInUp no-padding">
-                                                <h1>Innovative Businesses</h1>
-                                                <div class="separator-line bg-yellow no-margin-lr"></div>
-                                                <span>We create premium designs, technology, ecommerce, mobile & digital campaigns.</span>
-                                                <a class="highlight-button btn inner-link no-margin-lr no-margin-bottom" href="#blog">Go Emotions!</a>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -330,7 +312,7 @@
                     <div id="owl-demo-small" class="owl-carousel owl-theme dark-pagination  dark-pagination-without-next-prev-arrow">
                         <!-- case study item -->
                         <div class="item">
-                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('http://placehold.it/1000x600');"></div>
+                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('images2/slider5.jpg');"></div>
                             <div class="col-lg-6 col-md-6 case-study-details">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">01</span>
@@ -346,7 +328,7 @@
                         <!-- end case study item -->
                         <!-- case study item -->
                         <div class="item">
-                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('http://placehold.it/1000x600');"></div>
+                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('images2/slider6.jpg');"></div>
                             <div class="col-lg-6 col-md-6 case-study-details">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">02</span>
@@ -362,7 +344,7 @@
                         <!-- end case study item -->
                         <!-- case study item -->
                         <div class="item">
-                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('http://placehold.it/1000x600');"></div>
+                            <div class="col-lg-6 col-md-6 case-study-img cover-background" style="background-image:url('images2/slider7.jpg');"></div>
                             <div class="col-lg-6 col-md-6 case-study-details">
                                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">03</span>
@@ -383,55 +365,7 @@
         <!-- case study section -->
         
         <!-- blog section -->
-        <section id="blog" class="wow fadeIn">
-            <div class="container">
-                <div class="row">
-                    <!-- section title -->
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title">Latest Blogs</h3>
-                    </div>
-                    <!-- end section title -->
-                </div>
-                <div class="row">
-                    <!-- blog item -->
-                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="300ms">
-                        <div class="blog-post">
-                            <div class="blog-post-images"><a href="#"><img src="http://placehold.it/800x500" alt=""></a></div>
-                            <div class="post-details">
-                                <a href="blog-single-full-width-with-image-slider.html" class="post-title">Standard post with picture</a>
-                                <span class="post-author sm-margin-bottom-three sm-margin-top-three">Posted by <a href="blog-single-full-width-with-image-slider.html">Michael Freemon</a> | 10 January 2015</span>
-                                <p class="width-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end blog item -->
-                    <!-- blog item -->
-                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="600ms">
-                        <div class="blog-post">
-                            <div class="blog-post-images"><a href="#"><img src="http://placehold.it/800x500" alt=""></a></div>
-                            <div class="post-details">
-                                <a href="blog-single-right-sidebar.html" class="post-title">Post with featured picture</a>
-                                <span class="post-author sm-margin-bottom-three sm-margin-top-three">Posted by <a href="blog-single-right-sidebar.html">Colin Powell</a> | 02 January 2015</span>
-                                <p class="width-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end blog item -->
-                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="900ms">
-                        <div class="blog-post">
-                            <div class="blog-post-images"><a href="#"><img src="http://placehold.it/800x500" alt=""></a></div>
-                            <div class="post-details">
-                                <a href="blog-single-full-width.html" class="post-title">Standard post with slider</a>
-                                <span class="post-author sm-margin-bottom-three sm-margin-top-three">Posted by <a href="blog-single-full-width.html">Vince Lombardi</a> | 02 January 2015</span>
-                                <p class="width-90">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end blog item -->
-                
-            </div>
-        </section>
+        
         <!-- end blog section -->
         
         
@@ -440,15 +374,16 @@
             
             <div class="container-fluid bg-dark-gray footer-bottom">
                 <div class="container">
-                    <div class="row margin-three">
+                    <div class="row margin-three" style="margin-top:1.5% !important; margin-bottom: 1.5% !important">
                         <!-- copyright -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2015 H-Code is proudly powered by ThemeZaa.
+                        <div style="padding-top:10px; color:white;" class="col-md-8 col-sm-8 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="Contact.aspx">Contact Us</a> | 
+                                        <a style="color:white;" href="termsandconditions.aspx">Terms and Conditions</a> | <a style="color:white;" href="privacypolicy.aspx" >Privacy Policy</a>
                         </div>
                         <!-- end copyright -->
                         <!-- logo -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images2/logosmall.png" alt=""></a>
+                        <div class="col-md-4 col-sm-4 col-xs-12 footer-logo text-right xs-text-center">
+                            <a href="#"><img style="height:44px; max-width:174px !important;" src="images2/logosmall.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>

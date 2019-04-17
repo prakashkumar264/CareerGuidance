@@ -5,16 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    <title>About Us | Upgrowth</title>
-        <meta name="description" content="H-Code - A premium portfolio template from ThemeZaa">
-        <meta name="keywords" content="">
-        <meta charset="utf-8">
-        <meta name="author" content="ThemeZaa">
+       
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images2/favicon.png">
-        <link rel="apple-touch-icon" href="images2/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images2/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images2/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="images2/favicon.png" />
+        <link rel="apple-touch-icon" href="images2/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="images2/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="images2/apple-touch-icon-114x114.png" />
         <!-- animation --> 
         <link rel="stylesheet" href="css2/animate.css" />
         <!-- bootstrap --> 
@@ -271,21 +268,21 @@
         <footer>
            
           
-            <div class="container-fluid bg-dark-gray footer-bottom">
+           <div class="container-fluid bg-dark-gray footer-bottom">
                 <div class="container">
-                    <div class="row margin-three">
+                    <div class="row margin-three" style="margin-top:1.5% !important; margin-bottom: 1.5% !important">
                         <!-- copyright -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2015 H-Code is proudly powered by ThemeZaa.
+                        <div style="padding-top:10px; color:white;" class="col-md-8 col-sm-8 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
+                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="Contact.aspx">Contact Us</a> | 
+                                        <a style="color:white;" href="termsandconditions.aspx">Terms and Conditions</a> | <a style="color:white;" href="privacypolicy.aspx" >Privacy Policy</a>
                         </div>
                         <!-- end copyright -->
                         <!-- logo -->
-                        <div class="col-md-6 col-sm-6 col-xs-12 footer-logo text-right xs-text-center">
-                            <a href="#"><img src="images/logosmall.png" alt=""/></a>
+                        <div class="col-md-4 col-sm-4 col-xs-12 footer-logo text-right xs-text-center">
+                            <a href="#"><img style="height:44px; max-width:174px !important;" src="images2/logosmall.png" alt=""></a>
                         </div>
                         <!-- end logo -->
                     </div>
-
                 </div>
             </div>
             <!-- scroll to top --> 

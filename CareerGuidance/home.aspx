@@ -234,7 +234,7 @@
         </section>
         <!-- end features section -->
         <!-- counter section -->
-        <section id="counter" class="fix-background" style="background-image:url('http://placehold.it/1920x1100');">
+        <section id="counter" class="fix-background" style="background-image:url('images2/slider8.jpg');">
             <div class="opacity-full bg-dark-gray"></div>
             <div class="container position-relative">
                 <div class="row">

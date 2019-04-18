@@ -19,7 +19,7 @@ namespace CareerGuidance
             }
             else
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login Successful');", true);
+               
                 string usrid = Convert.ToString(Session["usrid"]);
                 string usrname = Convert.ToString(Session["usrname"]);
                 string usremail = Convert.ToString(Session["usremail"]);

@@ -59,7 +59,7 @@ namespace CareerGuidance
 
                         Response.Redirect("index.aspx");
 
-                        //ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
                     
 
                     }

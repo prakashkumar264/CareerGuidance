@@ -196,9 +196,15 @@
                 <ul class="list">
                   
                     <li>
-                        <a href="index.aspx">
-                            <i class="material-icons">home</i>
+                        <a href="home.aspx">
+                            <i class="material-icons">person</i>
                             <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.aspx">
+                            <i class="material-icons">person</i>
+                            <span>Dashboard</span>
                         </a>
                     </li>
 					 <li>
@@ -223,6 +229,12 @@
                         <a href="results.aspx">
                             <i class="material-icons">highlight</i>
                             <span>Results</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ContactUs.aspx">
+                            <i class="material-icons">home</i>
+                            <span>Contact Us</span>
                         </a>
                     </li>
 

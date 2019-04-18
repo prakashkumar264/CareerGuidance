@@ -209,7 +209,7 @@
         </section>
         
         
-        <section class="cover-background" style="background-image:url('http://placehold.it/1920x1200');">
+        <section class="cover-background" style="background-image:url('images2/slider8.jpg');">
             <div class="opacity-full bg-dark-gray"></div>
             <div class="container position-relative">
                 <div class="row">

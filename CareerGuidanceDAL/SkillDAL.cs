@@ -51,6 +51,7 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        //results page
         public DataSet getpara(string userid)
         {
             SqlConnection objSqlConn = new SqlConnection();
@@ -67,6 +68,31 @@ namespace CareerGuidanceDAL
 
 
                 ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "resultspara", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        //get career choices
+        public DataSet getcareer(string userid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@userid", SqlDbType.VarChar, 255);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = userid;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getcareerchoice", objSqlParm);
             }
             catch (Exception ex)
             {

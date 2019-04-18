@@ -107,7 +107,6 @@
     <Content Include="aptitude.aspx" />
     <Content Include="AptitudeTest.aspx" />
     <Content Include="aptitudeview.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -3992,13 +3991,6 @@
     </Compile>
     <Compile Include="aptitudeview.aspx.designer.cs">
       <DependentUpon>aptitudeview.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>

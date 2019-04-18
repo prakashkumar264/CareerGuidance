@@ -47,7 +47,14 @@ namespace CareerGuidance
                     paraapti.InnerHtml = sbapti.ToString();
 
 
+                    DataSet dscareer = objskillDAL.getcareer(userid);
 
+                    StringBuilder sbcareer = new StringBuilder();
+                    for (i = 0; i < dscareer.Tables[0].Rows.Count; i++)
+                    {
+                        sbcareer.Append(" <h5 > " + dscareer.Tables[0].Rows[i]["Career"] + " </h5>");
+                    }
+                    career.InnerHtml = sbcareer.ToString();
                 }
             }
         }

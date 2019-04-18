@@ -144,7 +144,7 @@
                     <div class="row margin-three" style="margin-top:1.5% !important; margin-bottom: 1.5% !important">
                         <!-- copyright -->
                         <div style="padding-top:10px; color:white;" class="col-md-8 col-sm-8 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="Contact.aspx">Contact Us</a> | 
+                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="ContactUs.aspx">Contact Us</a> | 
                                         <a style="color:white;" href="termsandconditions.aspx">Terms and Conditions</a> | <a style="color:white;" href="privacypolicy.aspx" >Privacy Policy</a>
                         </div>
                         <!-- end copyright -->

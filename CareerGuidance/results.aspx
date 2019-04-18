@@ -33,6 +33,11 @@
                                 <div id="paraapti" runat="server">
                                    <%-- <p> python : 7 | 10</p>--%>
                                 </div> 
+                               <br />
+                               <h3 style="text-align:left;"> Career Choices for you are:</h3>
+                               <div id="career" runat="server">
+                                   <%--<p> </p>--%>
+                               </div>
 						   </div>
 						</div>
                         

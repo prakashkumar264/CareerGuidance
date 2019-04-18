@@ -68,6 +68,10 @@
                                 <li class="dropdown panel">
                                     <a href="Register.aspx" >Register <i class="fa fa-angle-down"></i></a>
                                 </li>
+
+                                <li class="dropdown panel" id="dash" runat="server">
+                                    
+                                </li>
 							
                             </ul>
                         </div>
@@ -321,7 +325,7 @@
                                     <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Corinne Product</p>
                                     <span class="case-study-work letter-spacing-3">Brand Strategy  |  Graphic Design</span>
                                     <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
-                                    <a href="#" class="highlight-button-black-border btn btn-small no-margin-bottom sm-no-margin">View Case Study</a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -337,7 +341,7 @@
                                     <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Rebrand Coffee</p>
                                     <span class="case-study-work letter-spacing-3">Web Design  |  Brand Strategy</span>
                                     <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
-                                    <a href="#" class="highlight-button-black-border btn btn-small no-margin-bottom sm-no-margin">View Case Study</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -353,7 +357,7 @@
                                     <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">William Stormdal</p>
                                     <span class="case-study-work letter-spacing-3">Brand Strategy  |  Graphic Design</span>
                                     <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
-                                    <a href="#" class="highlight-button-black-border btn btn-small no-margin-bottom sm-no-margin">View Case Study</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -377,7 +381,7 @@
                     <div class="row margin-three" style="margin-top:1.5% !important; margin-bottom: 1.5% !important">
                         <!-- copyright -->
                         <div style="padding-top:10px; color:white;" class="col-md-8 col-sm-8 col-xs-12 copyright text-left letter-spacing-1 xs-text-center xs-margin-bottom-one">
-                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="Contact.aspx">Contact Us</a> | 
+                            &copy; 2019 Upgrowth | <a style="color:white;" href="AboutUs.aspx" >About Us</a> | <a style="color:white;" href="ContactUs.aspx">Contact Us</a> | 
                                         <a style="color:white;" href="termsandconditions.aspx">Terms and Conditions</a> | <a style="color:white;" href="privacypolicy.aspx" >Privacy Policy</a>
                         </div>
                         <!-- end copyright -->
@@ -394,6 +398,7 @@
             <!-- scroll to top End... -->
         </footer>
         <!-- end footer -->
+
         <!-- javascript libraries -->
         <script type="text/javascript" src="js2/jquery.min.js"></script>
         <script type="text/javascript" src="js2/modernizr.js"></script>
@@ -402,33 +407,21 @@
         <script type="text/javascript" src="js2/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js2/skrollr.min.js"></script>
         <script type="text/javascript" src="js2/smooth-scroll.js"></script>
-        <!-- animation -->
-        <script type="text/javascript" src="js2/wow.min.js"></script>
-        <!-- page scroll -->                
-        <script type="text/javascript" src="js2/page-scroll.js"></script>
-        <!-- easy piechart-->               
-        <script type="text/javascript" src="js2/jquery.easypiechart.js"></script>
-        <!-- parallax -->                   
+        <script type="text/javascript" src="js2/wow.min.js"></script>           
+        <script type="text/javascript" src="js2/page-scroll.js"></script>            
+        <script type="text/javascript" src="js2/jquery.easypiechart.js"></script>              
         <script type="text/javascript" src="js2/jquery.parallax-1.1.3.js"></script>
-        <!--portfolio with shorting tab --> 
-        <script type="text/javascript" src="js2/jquery.isotope.min.js"></script>
-        <!-- owl slider  -->                
-        <script type="text/javascript" src="js2/owl.carousel.min.js"></script>
-        <!-- magnific popup  -->            
+        <script type="text/javascript" src="js2/jquery.isotope.min.js"></script>             
+        <script type="text/javascript" src="js2/owl.carousel.min.js"></script>         
         <script type="text/javascript" src="js2/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="js2/popup-gallery.js"></script>
-        <!-- text effect  -->               
-        <script type="text/javascript" src="js2/text-effect.js"></script>
-        <!-- revolution slider  -->         
+        <script type="text/javascript" src="js2/popup-gallery.js"></script>            
+        <script type="text/javascript" src="js2/text-effect.js"></script>    
         <script type="text/javascript" src="js2/jquery.tools.min.js"></script>
-        <script type="text/javascript" src="js2/jquery.revolution.js"></script>
-        <!-- counter  -->                   
-        <script type="text/javascript" src="js2/counter.js"></script>
-        <!-- fit videos  -->               
-        <script type="text/javascript" src="js2/jquery.fitvids.js"></script>
-        <!-- imagesloaded  -->              
+        <script type="text/javascript" src="js2/jquery.revolution.js"></script>                  
+        <script type="text/javascript" src="js2/counter.js"></script>            
+           
         <script type="text/javascript" src="js2/imagesloaded.pkgd.min.js"></script>
-        <!-- setting -->                    
+                
         <script type="text/javascript" src="js2/main.js"></script>
 
 

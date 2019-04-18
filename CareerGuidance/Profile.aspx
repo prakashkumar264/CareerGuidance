@@ -346,7 +346,7 @@
 
                                       
                                     </div>
-
+                                    
                                     <%--Reset Password--%>
                                     <div role="tabpanel" class="tab-pane fade in" id="change_password_settings">
                                        <div class="form-group" style="margin-bottom:0px;">
@@ -356,7 +356,7 @@
                                                          
                                                     </div>
                                                 </div>
-                                           <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtoldpassword" ErrorMessage="Please enter Old Password"></asp:RequiredFieldValidator>
+                                          <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtoldpassword" ErrorMessage="Please enter Old Password"></asp:RequiredFieldValidator>--%>
                                        </div>
                                         <div class="form-group" style="margin-bottom:0px;">
                                                 <div class="col-sm-10">
@@ -364,7 +364,7 @@
                                                         <asp:TextBox ID="txtNewPass" class="form-control" placeholder="New Password" runat="server" TextMode="Password" ></asp:TextBox>
                                                     </div>
                                                 </div>
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNewPass" ErrorMessage="Please enter New Password"></asp:RequiredFieldValidator>
+                                            <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNewPass" ErrorMessage="Please enter New Password"></asp:RequiredFieldValidator>--%>
                                              <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtNewPass" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"  ValidationExpression="^.*(?=.{8,})(?=.*[\d])(?=.*[\W]).*$"></asp:RegularExpressionValidator>                                                                           
                   
                                        </div>
@@ -374,7 +374,7 @@
                                                         <asp:TextBox ID="txtNewREPass" class="form-control" placeholder="Renter New Password" runat="server" TextMode="Password" ></asp:TextBox>
                                                     </div>
                                                 </div>
-                                             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtNewREPass" ErrorMessage="Please enter New Password"></asp:RequiredFieldValidator>
+                                            <%-- <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtNewREPass" ErrorMessage="Please enter New Password"></asp:RequiredFieldValidator>--%>
                                              <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtNewREPass" ErrorMessage="Password must contain 8 characters, 1 digit and 1 special character"  ValidationExpression="^.*(?=.{8,})(?=.*[\d])(?=.*[\W]).*$"></asp:RegularExpressionValidator>                                                                           
                   
                                        </div>

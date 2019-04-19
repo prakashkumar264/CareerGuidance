@@ -68,6 +68,7 @@ namespace CareerGuidance
                         Session["usrid"] = usrid;
                         Session["usrname"] = usrname;
                         Session["usremail"] = emailid;
+                        Session["prakash"] = Convert.ToInt32(1);
 
                         Response.Redirect("index.aspx");
 

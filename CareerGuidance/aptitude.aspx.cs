@@ -27,7 +27,8 @@ namespace CareerGuidance
                 else
                 {
                     var id = Convert.ToInt32(Request.QueryString["id"]);
-                    
+
+                    Session["prakash"] = Convert.ToInt32(1);
 
                     if (id > 0)
                     {

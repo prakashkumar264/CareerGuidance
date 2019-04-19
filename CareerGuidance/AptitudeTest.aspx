@@ -3,10 +3,10 @@
 
     <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
-  
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-
+     
      <section class="content">
         <div class="container-fluid">
             <div class="block-header">
@@ -19,7 +19,25 @@
                         <div class="header">
                             <h2>New Test</h2>
                         </div>
-						
+                       
+                        <center>
+                            <div>
+                                <asp:ScriptManager ID= "SM1" runat="server"></asp:ScriptManager>
+                                <asp:Timer ID="timer1" runat="server" Interval="1000" OnTick="timer1_tick"></asp:Timer>
+                            </div>
+
+                            <div>
+                            <asp:UpdatePanel id="updPnl" runat="server" UpdateMode="Conditional">
+                                <ContentTemplate>
+                                        <asp:Label ID="lblTimer" runat="server" Font-Bold="True" Font-Names="Arial" Font-Size="X-Large" ForeColor="#6600CC"></asp:Label>
+                                </ContentTemplate>
+                                <Triggers>
+                                         <asp:AsyncPostBackTrigger ControlID="timer1" EventName ="tick" />
+                                </Triggers>
+                            </asp:UpdatePanel>
+                            </div>
+                         </center>
+
 						<div class="body" >
 						      <div class="row" style="padding-left:20px;">
 							

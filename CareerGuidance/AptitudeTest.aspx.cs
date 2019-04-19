@@ -14,11 +14,20 @@ namespace CareerGuidance
     {
         SkillEntity objskillEntity = new SkillEntity();
         SkillDAL objskillDAL = new SkillDAL();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (!SM1.IsInAsyncPostBack)
+            {
+                Session["timeout"] = DateTime.Now.AddSeconds(5).ToString();
+            }
+
             if (!IsPostBack)
             {
+
+                
+
                 if (Session["usrid"] == null)
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You Have to login before accessing this page');window.location ='login.aspx';", true);
@@ -26,6 +35,8 @@ namespace CareerGuidance
                 }
                 else
                 {
+                    
+
                     string userid = Convert.ToString(Session["usrid"]);
 
                     string skillid = Convert.ToString(Session["selectedskillfortest"]);
@@ -161,84 +172,116 @@ namespace CareerGuidance
 
         }
 
+
+
+
+        protected void timer1_tick(object sender, EventArgs e)
+        {
+            
+
+            if (0 > DateTime.Compare(DateTime.Now, DateTime.Parse(Session["timeout"].ToString())))
+            {
+                lblTimer.Text = string.Format("Time Left: 00:{0}:{1}", ((Int32)DateTime.Parse(Session["timeout"].ToString()).Subtract(DateTime.Now).TotalMinutes).ToString(), ((Int32)DateTime.Parse(Session["timeout"].ToString()).Subtract(DateTime.Now).Seconds).ToString());
+            }
+            else
+            {
+                timer1.Enabled = true;
+
+                btn_submit_Click(sender, e);
+
+            }
+        }
+
         protected void btn_submit_Click(object sender, EventArgs e)
         {
-            int counter = 0;
-            int i;
 
-            string userid = Convert.ToString(Session["usrid"]);
-            string skillname = Convert.ToString(Session["selectedskillname"]);
-            string skillid = Convert.ToString(Session["selectedskillfortest"]);
-
-            string[] ques = new string[10];
-            ques[0] = Convert.ToString(Session["ques1"]);
-            ques[1] = Convert.ToString(Session["ques2"]);
-            ques[2] = Convert.ToString(Session["ques3"]);
-            ques[3] = Convert.ToString(Session["ques4"]);
-            ques[4] = Convert.ToString(Session["ques5"]);
-            ques[5] = Convert.ToString(Session["ques6"]);
-            ques[6] = Convert.ToString(Session["ques7"]);
-            ques[7] = Convert.ToString(Session["ques8"]);
-            ques[8] = Convert.ToString(Session["ques9"]);
-            ques[9] = Convert.ToString(Session["ques10"]);
-
-            string[] ans = new string[10];
-            ans[0] = QSONE.SelectedValue;
-            ans[1] = QSTWO.SelectedValue;
-            ans[2] = QSTHREE.SelectedValue;
-            ans[3] = QSFOUR.SelectedValue;
-            ans[4] = QSFIVE.SelectedValue;
-            ans[5] = QSSIX.SelectedValue;
-            ans[6] = QSSEVEN.SelectedValue;
-            ans[7] = QSEIGHT.SelectedValue;
-            ans[8] = QSNINE.SelectedValue;
-            ans[9] = QSTEN.SelectedValue;
-
-            for (i = 0; i < 10; i++)
+            if (Convert.ToInt32(Session["prakash"]) == 1)
             {
-                if(ans[i] == "")
+                int counter = 0;
+                int i;
+
+                string userid = Convert.ToString(Session["usrid"]);
+                string skillname = Convert.ToString(Session["selectedskillname"]);
+                string skillid = Convert.ToString(Session["selectedskillfortest"]);
+
+                string[] ques = new string[10];
+                ques[0] = Convert.ToString(Session["ques1"]);
+                ques[1] = Convert.ToString(Session["ques2"]);
+                ques[2] = Convert.ToString(Session["ques3"]);
+                ques[3] = Convert.ToString(Session["ques4"]);
+                ques[4] = Convert.ToString(Session["ques5"]);
+                ques[5] = Convert.ToString(Session["ques6"]);
+                ques[6] = Convert.ToString(Session["ques7"]);
+                ques[7] = Convert.ToString(Session["ques8"]);
+                ques[8] = Convert.ToString(Session["ques9"]);
+                ques[9] = Convert.ToString(Session["ques10"]);
+
+                string[] ans = new string[10];
+                ans[0] = QSONE.SelectedValue;
+                ans[1] = QSTWO.SelectedValue;
+                ans[2] = QSTHREE.SelectedValue;
+                ans[3] = QSFOUR.SelectedValue;
+                ans[4] = QSFIVE.SelectedValue;
+                ans[5] = QSSIX.SelectedValue;
+                ans[6] = QSSEVEN.SelectedValue;
+                ans[7] = QSEIGHT.SelectedValue;
+                ans[8] = QSNINE.SelectedValue;
+                ans[9] = QSTEN.SelectedValue;
+
+                for (i = 0; i < 10; i++)
                 {
-                    ans[i] = "Not Answered";
+                    if (ans[i] == "")
+                    {
+                        ans[i] = "Not Answered";
+                    }
                 }
+
+                string[] crt = new string[10];
+                crt[0] = Convert.ToString(Session["crt1"]);
+                crt[1] = Convert.ToString(Session["crt2"]);
+                crt[2] = Convert.ToString(Session["crt3"]);
+                crt[3] = Convert.ToString(Session["crt4"]);
+                crt[4] = Convert.ToString(Session["crt5"]);
+                crt[5] = Convert.ToString(Session["crt6"]);
+                crt[6] = Convert.ToString(Session["crt7"]);
+                crt[7] = Convert.ToString(Session["crt8"]);
+                crt[8] = Convert.ToString(Session["crt9"]);
+                crt[9] = Convert.ToString(Session["crt10"]);
+
+
+                //Calculate score
+                for (i = 0; i < 10; i++)
+                {
+                    if (ans[i] == crt[i])
+                    {
+                        counter++;
+                    }
+                    else
+                    {
+
+                    }
+                }
+
+                string xyz = DateTime.Now.ToString("HH:mm:ss");
+
+                //Add apti result in Databse
+                for (i = 0; i < 10; i++)
+                {
+                    DataSet dsaddaptiresult = objskillDAL.addaptiresult(userid, ques[i], ans[i], xyz);
+                }
+
+                DataSet dsaptiscorecard = objskillDAL.aptiscorecard(userid, skillid, skillname, counter, xyz);
+
+                Session["prakash"] = Convert.ToInt32(2);
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Aptitude Submitted Successfully');window.location ='aptitude.aspx';", true);
+
+
             }
-
-            string[] crt = new string[10];
-            crt[0] = Convert.ToString(Session["crt1"]);
-            crt[1] = Convert.ToString(Session["crt2"]);
-            crt[2] = Convert.ToString(Session["crt3"]);
-            crt[3] = Convert.ToString(Session["crt4"]);
-            crt[4] = Convert.ToString(Session["crt5"]);
-            crt[5] = Convert.ToString(Session["crt6"]);
-            crt[6] = Convert.ToString(Session["crt7"]);
-            crt[7] = Convert.ToString(Session["crt8"]);
-            crt[8] = Convert.ToString(Session["crt9"]);
-            crt[9] = Convert.ToString(Session["crt10"]);
-
-
-            //Calculate score
-            for (i = 0; i < 10; i++)
+            else
             {
-                if ( ans[i] == crt[i])
-                {
-                    counter++;
-                }
-                else
-                {
-                    
-                }
+                Response.Redirect("aptitude.aspx");
             }
-
-            string xyz = DateTime.Now.ToString("HH:mm:ss");
-
-            //Add apti result in Databse
-            for (i = 0; i < 10; i++)
-            {
-                DataSet dsaddaptiresult = objskillDAL.addaptiresult(userid, ques[i], ans[i], xyz);
-            }
-
-            DataSet dsaptiscorecard = objskillDAL.aptiscorecard(userid, skillid, skillname, counter, xyz );
-
-            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Aptitude Submitted Successfully');window.location ='aptitude.aspx';", true);
 
 
         }

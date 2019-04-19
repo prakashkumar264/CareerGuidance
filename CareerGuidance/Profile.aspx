@@ -209,6 +209,12 @@
                                                 <div class="col-md-8">
                                               
                                                     <asp:FileUpload ID="FUprofilepic" ClientIDMode="Static" runat="server" />
+                                                    <p>File must be .jpg/.jpeg and less than 5MB</p>
+                                                    <asp:RegularExpressionValidator ID="regexValidator" runat="server"
+                                                         ControlToValidate="FUprofilepic"
+                                                         ErrorMessage="Only JPEG images are allowed" 
+                                                         ValidationExpression="(.*\.([Jj][Pp][Gg])|.*\.([Jj][Pp][Ee][Gg])$)">
+                                                    </asp:RegularExpressionValidator>
                                                     <asp:Label ID="lblprofilepic" runat="server" Text="Current Profile pic: " />
                                                     <asp:Image ID="profilepic2"  runat="server" style="min-width: 200px; min-height: 200px;max-width: 250px;max-height: 250px;" />
                                                 </div>
@@ -224,6 +230,12 @@
                                                 <div class="col-md-8">
                                                   
                                                      <asp:FileUpload ID="FUCV" ClientIDMode="Static" runat="server" />
+                                                    <p>File must be .pdf and less than 5MB</p>
+                                                     <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server"
+                                                         ControlToValidate="FUCV"
+                                                         ErrorMessage="Only PDF are allowed" 
+                                                         ValidationExpression="(.*\.([Pp][Dd][Ff])$)">
+                                                    </asp:RegularExpressionValidator>
                                                      <asp:Label ID="lblCV" runat="server" Text="Current CV/Resume: "></asp:Label>
                                                      <asp:HyperLink ID="linkCV" ClientIDMode="Static" Target="_blank" runat="server">Download</asp:HyperLink>
                                                 </div>

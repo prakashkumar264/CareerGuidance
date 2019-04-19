@@ -88,67 +88,81 @@ namespace CareerGuidance
             string Skill = txtSkills.Text;
             string Passion = txtPassion.Text;
             string Interest = txtInterest.Text;
-            string profilepic;
-            string CV;
+            string profilepic ="";
+            string CV ="";
             string usremail = Convert.ToString(Session["usremail"] );
 
 
-
-            //Upload Profile Pic
-            if (FUprofilepic.HasFile)
+            //upload profile pic 
+            if (FUprofilepic.PostedFile.ContentLength > 5242880)
             {
-                string path = Server.MapPath("~/ProfilePic/" + usremail + "");
-                try
-                {
-                    if (Directory.Exists(path))
-                    {
-
-                    }
-                    else
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(path);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("The process failed: {0}", e.ToString());
-                }
-                profilepic = FUprofilepic.FileName.ToString();
-                FUprofilepic.PostedFile.SaveAs(Server.MapPath("~/ProfilePic/" + usremail + "/") + profilepic);
-                profilepic = ("ProfilePic/" + usremail + "/") + profilepic + "";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Profile Pic Size should be less than 5MB');", true);
             }
             else
             {
-                profilepic = profilepic2.ImageUrl.ToString();
+                if (FUprofilepic.HasFile)
+                {
+                    string path = Server.MapPath("~/ProfilePic/" + usremail + "");
+                    try
+                    {
+                        if (Directory.Exists(path))
+                        {
+
+                        }
+                        else
+                        {
+                            DirectoryInfo di = Directory.CreateDirectory(path);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("The process failed: {0}", e.ToString());
+                    }
+                    profilepic = FUprofilepic.FileName.ToString();
+                    FUprofilepic.PostedFile.SaveAs(Server.MapPath("~/ProfilePic/" + usremail + "/") + profilepic);
+                    profilepic = ("ProfilePic/" + usremail + "/") + profilepic + "";
+                }
+                else
+                {
+                    profilepic = profilepic2.ImageUrl.ToString();
+                }
             }
 
             //upload CV/Resume
-            if (FUCV.HasFile)
+            if (FUCV.PostedFile.ContentLength > 5242880)
             {
-                string path = Server.MapPath("~/CV/" + usremail + "");
-                try
-                {
-                    if (Directory.Exists(path))
-                    {
-
-                    }
-                    else
-                    {
-                        DirectoryInfo di = Directory.CreateDirectory(path);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("The process failed: {0}", e.ToString());
-                }
-                CV = FUCV.FileName.ToString();
-                FUCV.PostedFile.SaveAs(Server.MapPath("~/CV/" + usremail + "/") + CV);
-                CV = ("CV/" + usremail + "/") + CV + "";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('CV/Resume Size should be less than 5MB');", true);
             }
             else
             {
-                CV = linkCV.NavigateUrl.ToString();
+                if (FUCV.HasFile)
+                {
+                    string path = Server.MapPath("~/CV/" + usremail + "");
+                    try
+                    {
+                        if (Directory.Exists(path))
+                        {
+
+                        }
+                        else
+                        {
+                            DirectoryInfo di = Directory.CreateDirectory(path);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("The process failed: {0}", e.ToString());
+                    }
+                    CV = FUCV.FileName.ToString();
+                    FUCV.PostedFile.SaveAs(Server.MapPath("~/CV/" + usremail + "/") + CV);
+                    CV = ("CV/" + usremail + "/") + CV + "";
+                }
+                else
+                {
+                    CV = linkCV.NavigateUrl.ToString();
+                }
             }
+            
 
             DataSet dsupdatebasicusrdata = objuserDAL.updatebasicuserdata(userid, Email, Phone, Location, JobRole, Experience, Skill, Passion, Interest, profilepic, CV);
 

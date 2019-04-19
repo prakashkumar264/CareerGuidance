@@ -3,6 +3,7 @@ using CareerGuidanceEntity;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -42,6 +43,9 @@ namespace CareerGuidance
                     txtSkills.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Skill"]);
                     txtPassion.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Passion"]);
                     txtInterest.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["Interest"]);
+                    profilepic2.ImageUrl = Convert.ToString(dsusrdata.Tables[0].Rows[0]["profilepic"]);
+                    profilepic.ImageUrl = Convert.ToString(dsusrdata.Tables[0].Rows[0]["profilepic"]);
+                    linkCV.NavigateUrl = Convert.ToString(dsusrdata.Tables[0].Rows[0]["CV"]);
 
                     //Education User Data
                     txtTenth.Text = Convert.ToString(dsusrdata.Tables[0].Rows[0]["TenthMarks"]);
@@ -84,9 +88,69 @@ namespace CareerGuidance
             string Skill = txtSkills.Text;
             string Passion = txtPassion.Text;
             string Interest = txtInterest.Text;
+            string profilepic;
+            string CV;
+            string usremail = Convert.ToString(Session["usremail"] );
 
 
-            DataSet dsupdatebasicusrdata = objuserDAL.updatebasicuserdata(userid, Email, Phone, Location, JobRole, Experience, Skill, Passion, Interest);
+
+            //Upload Profile Pic
+            if (FUprofilepic.HasFile)
+            {
+                string path = Server.MapPath("~/ProfilePic/" + usremail + "");
+                try
+                {
+                    if (Directory.Exists(path))
+                    {
+
+                    }
+                    else
+                    {
+                        DirectoryInfo di = Directory.CreateDirectory(path);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("The process failed: {0}", e.ToString());
+                }
+                profilepic = FUprofilepic.FileName.ToString();
+                FUprofilepic.PostedFile.SaveAs(Server.MapPath("~/ProfilePic/" + usremail + "/") + profilepic);
+                profilepic = ("ProfilePic/" + usremail + "/") + profilepic + "";
+            }
+            else
+            {
+                profilepic = profilepic2.ImageUrl.ToString();
+            }
+
+            //upload CV/Resume
+            if (FUCV.HasFile)
+            {
+                string path = Server.MapPath("~/CV/" + usremail + "");
+                try
+                {
+                    if (Directory.Exists(path))
+                    {
+
+                    }
+                    else
+                    {
+                        DirectoryInfo di = Directory.CreateDirectory(path);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("The process failed: {0}", e.ToString());
+                }
+                CV = FUCV.FileName.ToString();
+                FUCV.PostedFile.SaveAs(Server.MapPath("~/CV/" + usremail + "/") + CV);
+                CV = ("CV/" + usremail + "/") + CV + "";
+            }
+            else
+            {
+                CV = linkCV.NavigateUrl.ToString();
+            }
+
+            DataSet dsupdatebasicusrdata = objuserDAL.updatebasicuserdata(userid, Email, Phone, Location, JobRole, Experience, Skill, Passion, Interest, profilepic, CV);
 
             ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Your Profile has been updated Successfully');window.location ='profile.aspx';", true);
 

@@ -4133,6 +4133,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="CV\" />
+    <Folder Include="ProfilePic\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

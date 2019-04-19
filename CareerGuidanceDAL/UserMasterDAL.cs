@@ -100,14 +100,14 @@ namespace CareerGuidanceDAL
         }
 
         //update user data
-        public DataSet updatebasicuserdata(string userid, string Email, string Phone, string Location, string JobRole, string Experience, string Skill, string Passion, string Interest)
+        public DataSet updatebasicuserdata(string userid, string Email, string Phone, string Location, string JobRole, string Experience, string Skill, string Passion, string Interest, string profilepic, string CV)
         {
             SqlConnection objSqlConn = new SqlConnection();
 
             objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
             try
             {
-                SqlParameter[] objSqlParm = new SqlParameter[9];
+                SqlParameter[] objSqlParm = new SqlParameter[11];
 
 
                 objSqlParm[0] = new SqlParameter("@id", SqlDbType.Int);
@@ -145,6 +145,14 @@ namespace CareerGuidanceDAL
                 objSqlParm[8] = new SqlParameter("@Interest", SqlDbType.VarChar, 255);
                 objSqlParm[8].Direction = ParameterDirection.Input;
                 objSqlParm[8].Value = Interest;
+
+                objSqlParm[9] = new SqlParameter("@profilepic", SqlDbType.VarChar, -1);
+                objSqlParm[9].Direction = ParameterDirection.Input;
+                objSqlParm[9].Value = profilepic;
+
+                objSqlParm[10] = new SqlParameter("@CV", SqlDbType.VarChar, -1);
+                objSqlParm[10].Direction = ParameterDirection.Input;
+                objSqlParm[10].Value = CV;
 
                 ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "UpdateUserBasicDetail", objSqlParm);
             }

@@ -76,6 +76,9 @@
                                 <li class="dropdown panel">
                                     <a href="Register.aspx" >Register <i class="fa fa-angle-down"></i></a>
                                 </li>
+							  <li class="dropdown panel" id="dash" runat="server">
+                                    
+                                </li>
 							
                             </ul>
                         </div>

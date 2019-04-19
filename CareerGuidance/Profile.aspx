@@ -14,7 +14,8 @@
                         <div class="profile-header">&nbsp;</div>
                         <div class="profile-body">
                             <div class="image-area">
-                                <img src="images/user-lg.jpg" alt="AdminBSB - Profile Image" />
+                                <asp:Image ID="profilepic" ClientIDMode="Static" runat="server"  style="min-width: 200px; min-height: 200px;max-width: 200px;max-height: 200px;"/>
+                                <%--<img src="images/user-lg.jpg" alt="AdminBSB - Profile Image" />--%>
                             </div>
                             <div class="content-area">
                                 <h3><%:Session["usrname"]%></h3>
@@ -195,6 +196,36 @@
                                                     <div class="form-line">
                                                         <asp:TextBox ID="txtInterest" class="form-control" placeholder="Interest" runat="server"></asp:TextBox>
                                                     </div>
+                                                </div>
+                                               </div>
+                                            </div>
+
+                                        <%-- profile pic--%>
+                                           <div class="form-group" style="margin-bottom:0px;">
+                                               <div class="row">
+                                                     <div class="col-md-1">
+                                                    <h5>Profile Photo:</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                              
+                                                    <asp:FileUpload ID="FUprofilepic" ClientIDMode="Static" runat="server" />
+                                                    <asp:Label ID="lblprofilepic" runat="server" Text="Current Profile pic: " />
+                                                    <asp:Image ID="profilepic2"  runat="server" style="min-width: 200px; min-height: 200px;max-width: 250px;max-height: 250px;" />
+                                                </div>
+                                               </div>
+                                            </div>
+
+                                        <%--CV upload--%>
+                                        <div class="form-group" style="margin-bottom:0px;">
+                                               <div class="row">
+                                                     <div class="col-md-1">
+                                                    <h5>CV / REsume:</h5>
+                                                </div>
+                                                <div class="col-md-8">
+                                                  
+                                                     <asp:FileUpload ID="FUCV" ClientIDMode="Static" runat="server" />
+                                                     <asp:Label ID="lblCV" runat="server" Text="Current CV/Resume: "></asp:Label>
+                                                     <asp:HyperLink ID="linkCV" ClientIDMode="Static" Target="_blank" runat="server">Download</asp:HyperLink>
                                                 </div>
                                                </div>
                                             </div>

@@ -17,7 +17,19 @@ namespace CareerGuidance
         {
             if (!IsPostBack)
             {
+                if (Session["usrid"] == null)
+                {
 
+
+                }
+                else
+                {
+                    StringBuilder sb = new StringBuilder();
+
+                    sb.Append("<a href=\"index.aspx\" >Dashboard <i class=\"fa fa-angle-down\"></i></a>");
+
+                    dash.InnerHtml = sb.ToString();
+                }
             }
         }
 

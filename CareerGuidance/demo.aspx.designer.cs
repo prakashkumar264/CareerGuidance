@@ -10,6 +10,6 @@
 namespace CareerGuidance {
     
     
-    public partial class getadvice {
+    public partial class demo {
     }
 }

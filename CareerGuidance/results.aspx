@@ -21,7 +21,13 @@
 						<br />
 						<div class= "row">
 						   <div class="col-md-2">
-						   
+                               
+                               
+
+
+
+
+
 						   </div>
 						   <div class="col-md-8" style="text-align:center;">
 						        <p> Based on the Skills you have rated: </p>
@@ -55,4 +61,5 @@
 
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="bottom" runat="server">
+  
 </asp:Content>

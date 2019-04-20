@@ -51,6 +51,70 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        public DataSet getlocationlist()
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[0];
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getlocationmaster", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet advicesearch(int typeid, int locationid)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[2];
+
+
+                objSqlParm[0] = new SqlParameter("@typeid", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = typeid;
+
+                objSqlParm[1] = new SqlParameter("@locationid", SqlDbType.Int);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = locationid;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadvicelist", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet getadvicetype()
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[0];
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadvicemaster", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
         //results page
         public DataSet getpara(string userid)
         {

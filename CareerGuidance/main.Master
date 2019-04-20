@@ -72,12 +72,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="index.aspx">
-                            <i class="material-icons">person</i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
+                    
 					 <li>
                         <a href="Profile.aspx">
                             <i class="material-icons">person</i>
@@ -94,6 +89,12 @@
                         <a href="aptitude.aspx">
                             <i class="material-icons">assignment</i>
                             <span>Aptitude</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="getadvice.aspx">
+                            <i class="material-icons">assignment</i>
+                            <span>Get Advice</span>
                         </a>
                     </li>
 					<li>

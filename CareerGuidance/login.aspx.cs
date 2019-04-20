@@ -70,9 +70,8 @@ namespace CareerGuidance
                         Session["usremail"] = emailid;
                         Session["prakash"] = Convert.ToInt32(1);
 
-                        Response.Redirect("index.aspx");
 
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='index.aspx';", true);
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Login  Successfully');window.location ='profile.aspx';", true);
                     
 
                     }

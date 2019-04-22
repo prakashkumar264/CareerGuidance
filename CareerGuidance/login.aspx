@@ -52,9 +52,7 @@
                     </div>
                     <!-- end search and cart  -->
                     <!-- toggle navigation -->
-                    <div class="navbar-header col-sm-8 col-xs-2 pull-right">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                    </div>
+                
                     <!-- toggle navigation end -->
                     <!-- main menu -->
                      <div class="col-md-8 accordion-menu text-right">

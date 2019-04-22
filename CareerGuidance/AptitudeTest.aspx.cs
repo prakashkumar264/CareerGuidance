@@ -20,7 +20,7 @@ namespace CareerGuidance
 
             if (!SM1.IsInAsyncPostBack)
             {
-                Session["timeout"] = DateTime.Now.AddSeconds(5).ToString();
+                Session["timeout"] = DateTime.Now.AddMinutes(15).ToString();
             }
 
             if (!IsPostBack)

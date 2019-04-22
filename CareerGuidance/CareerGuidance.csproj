@@ -173,7 +173,6 @@
     <Content Include="css\themes\theme-teal.min.css" />
     <Content Include="css\themes\theme-yellow.css" />
     <Content Include="css\themes\theme-yellow.min.css" />
-    <Content Include="Default.aspx" />
     <Content Include="demo.aspx" />
     <Content Include="documentation\css\documentation.css" />
     <Content Include="documentation\index.html" />
@@ -519,6 +518,9 @@
     <Content Include="fonts\revicons.ttf" />
     <Content Include="fonts\revicons.woff" />
     <Content Include="admin.Master" />
+    <None Include="Properties\PublishProfiles\AdvancedSettings.pubxml" />
+    <None Include="Properties\PublishProfiles\Upgrowth - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\upgrowthdemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\animation-bg.jpg" />
     <Content Include="images\image-gallery\1.jpg" />
@@ -3964,7 +3966,9 @@
     <Content Include="users.aspx" />
     <Content Include="userview.aspx" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
@@ -4035,13 +4039,6 @@
       <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Content\SaltEncryption.cs" />
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="demo.aspx.cs">
       <DependentUpon>demo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -136,7 +136,7 @@
                                             <th>Location</th>
                                             <th>Profession</th>
                                             <th></th>
-                                            <th></th>
+                          
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -146,7 +146,7 @@
                                             <th>Location</th>
                                             <th>Profession</th>
                                             <th></th>
-                                            <th></th>
+                       
                                         </tr>
                                     </tfoot>
                                     <tbody id="list" runat="server">

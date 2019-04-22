@@ -27,19 +27,14 @@ namespace CareerGuidance
                 else
                 {
                     var viewid = Convert.ToInt32(Request.QueryString["viewid"]);
-                    var deleteid = Convert.ToInt32(Request.QueryString["deleteid"]);
+
 
                     if (viewid > 0)
                     {
                         Session["viewid"] = Convert.ToInt32(viewid);
                         Response.Redirect("userview.aspx");
                     }
-                    else if (deleteid > 0)
-                    {
-                        Session["deleteid"] = Convert.ToInt32(deleteid);
-                        Response.Redirect("userdelete.aspx");
-                    }
-
+                
                     DataSet dsusers = objadminDAL.getallusers();
 
                     StringBuilder sb = new StringBuilder();
@@ -52,7 +47,7 @@ namespace CareerGuidance
                         sb.Append("     <td>" + dsusers.Tables[0].Rows[i]["Location"] + "</td>");
                         sb.Append("     <td>" + dsusers.Tables[0].Rows[i]["Profession"] + "</td>");
                         sb.Append("     <td><a href=\"users.aspx?viewid=" + dsusers.Tables[0].Rows[i]["id"] + "\">View</a></td>");
-                        sb.Append("     <td><a href=\"users.aspx?deleteid=" + dsusers.Tables[0].Rows[i]["id"] + "\">Delete</a></td>");
+               
                         sb.Append(" </tr>");
 
                     }

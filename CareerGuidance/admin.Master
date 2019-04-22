@@ -1,0 +1,178 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="CareerGuidance.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/themes/all-themes.css" rel="stylesheet" />
+    <link href="plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <title></title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+
+    </asp:ContentPlaceHolder>
+</head>
+<body class="theme-red">
+    <form id="form1" runat="server">
+
+        <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Please wait...</p>
+        </div>
+    </div>
+  
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="index.aspx">UpGrowth</a>
+            </div>
+           
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <section>
+        <!-- Left Sidebar -->
+        <aside id="leftsidebar" class="sidebar">
+            
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                  
+                    <li>
+                        <a href="home.aspx">
+                            <i class="material-icons">person</i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    
+					 <li>
+                        <a href="users.aspx">
+                            <i class="material-icons">person</i>
+                            <span>Users</span>
+                        </a>
+                    </li>
+					<li>
+                        <a href="adminadvisors.aspx">
+                            <i class="material-icons">school</i>
+                            <span>Advsiors</span>
+                        </a>
+                    </li>
+				
+                    <li>
+                        <a href="ContactUs.aspx">
+                            <i class="material-icons">home</i>
+                            <span>Contact Us</span>
+                        </a>
+                    </li>
+
+
+
+                    
+                    
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal">
+                    <asp:Button ID="btn_logout" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Logout" OnClick="btn_logout_Click"  />
+            </div>
+            <!-- #Footer -->
+        </aside>
+        <!-- #END# Left Sidebar -->
+       
+    </section>
+
+
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+        <script src="plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+      <script src="plugins/bootstrap-notify/bootstrap-notify.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="plugins/node-waves/waves.js"></script>
+      
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="plugins/jquery-countto/jquery.countTo.js"></script>
+
+    <!-- Morris Plugin Js -->
+    <script src="plugins/raphael/raphael.min.js"></script>
+    <script src="plugins/morrisjs/morris.js"></script>
+
+    <!-- ChartJs -->
+    <script src="plugins/chartjs/Chart.bundle.js"></script>
+
+    <!-- Flot Charts Plugin Js -->
+    <script src="plugins/flot-charts/jquery.flot.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="plugins/flot-charts/jquery.flot.time.js"></script>
+
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+    <!-- Custom Js -->
+    <script src="js/admin.js"></script>
+    <script src="js/pages/index.js"></script>
+
+    <!-- Demo Js -->
+    <script src="js/demo.js"></script>
+    <script src="js/pages/ui/modals.js"></script>
+
+      
+
+    <script src="plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="js/pages/tables/jquery-datatable.js"></script>
+
+
+      <asp:ContentPlaceHolder ID="bottom" runat="server">
+
+      </asp:ContentPlaceHolder>
+
+
+</body>
+</html>

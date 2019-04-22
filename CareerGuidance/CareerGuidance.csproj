@@ -104,6 +104,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="adminadvisors.aspx" />
     <Content Include="advisors.aspx" />
     <Content Include="aptitude.aspx" />
     <Content Include="AptitudeTest.aspx" />
@@ -516,6 +518,7 @@
     <Content Include="fonts\revicons.eot" />
     <Content Include="fonts\revicons.ttf" />
     <Content Include="fonts\revicons.woff" />
+    <Content Include="admin.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\animation-bg.jpg" />
     <Content Include="images\image-gallery\1.jpg" />
@@ -3958,6 +3961,8 @@
     <Content Include="SkillEdit.aspx" />
     <Content Include="Skills.aspx" />
     <Content Include="termsandconditions.aspx" />
+    <Content Include="users.aspx" />
+    <Content Include="userview.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -3970,6 +3975,27 @@
     </Compile>
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="adminadvisors.aspx.cs">
+      <DependentUpon>adminadvisors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminadvisors.aspx.designer.cs">
+      <DependentUpon>adminadvisors.aspx</DependentUpon>
     </Compile>
     <Compile Include="advisors.aspx.cs">
       <DependentUpon>advisors.aspx</DependentUpon>
@@ -4138,6 +4164,20 @@
     </Compile>
     <Compile Include="termsandconditions.aspx.designer.cs">
       <DependentUpon>termsandconditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userview.aspx.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userview.aspx.designer.cs">
+      <DependentUpon>userview.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

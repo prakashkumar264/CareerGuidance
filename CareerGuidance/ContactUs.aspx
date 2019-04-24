@@ -39,7 +39,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
+       <nav style="background-color: white;" class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->
@@ -125,13 +125,12 @@
                         <p class="text-med">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                     <div class="col-md-6 col-sm-6  col-md-offset-2">
-                        
-                            
-                            <input name="name" type="text" placeholder="Your Name" />
-                            <input name="email" type="text" placeholder="Your Email"  />
-                            <textarea placeholder="Your Message" name="comment"></textarea>
-                            <button id="contact-us-button" type="submit" class="highlight-button-dark btn btn-small button xs-margin-bottom-five">Send message</button>
+                           
                        
+                            <asp:TextBox ID="name" runat="server"  placeholder="Name" />
+                            <asp:TextBox ID="email" runat="server"  placeholder="Email Address" />
+                           <asp:TextBox ID="msg" runat="server" placeholder="Your Message" Rows="10" />
+                           <asp:Button ID="submit" runat="server" class="highlight-button-dark btn btn-small button xs-margin-bottom-five" Text="Submit" OnClick="submit_Click" />
                     </div>
                 </div>
             </div>

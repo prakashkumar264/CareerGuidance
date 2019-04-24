@@ -42,7 +42,7 @@
                     </div>
                 </div>
             </div>
-            <p>Please wait...</p>
+  
         </div>
     </div>
   
@@ -86,7 +86,7 @@
                             <span>Advsiors</span>
                         </a>
                     </li>
-				
+				 
                     <li>
                         <a href="ContactUs.aspx">
                             <i class="material-icons">home</i>

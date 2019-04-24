@@ -34,7 +34,7 @@
 
 
              <!-- navigation panel -->
-        <nav class="navbar navbar-default navbar-fixed-top  overlay-nav sticky-nav nav-border-bottom" role="navigation">
+        <nav  style="background-color: white;" class="navbar navbar-default navbar-fixed-top  overlay-nav sticky-nav nav-border-bottom" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->

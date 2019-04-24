@@ -26,8 +26,6 @@ namespace CareerGuidance
             if (!IsPostBack)
             {
 
-                
-
                 if (Session["usrid"] == null)
                 {
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('You Have to login before accessing this page');window.location ='login.aspx';", true);

@@ -43,6 +43,24 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        public DataSet getadvisor()
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[0];
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadvisorlist", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
         public DataSet getparticularuser(int viewid)
         {
             SqlConnection objSqlConn = new SqlConnection();

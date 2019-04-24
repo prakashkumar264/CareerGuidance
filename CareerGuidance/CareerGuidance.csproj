@@ -106,6 +106,7 @@
     <Content Include="AboutUs.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="adminadvisors.aspx" />
+    <Content Include="adminContact.aspx" />
     <Content Include="advisors.aspx" />
     <Content Include="aptitude.aspx" />
     <Content Include="AptitudeTest.aspx" />
@@ -4000,6 +4001,13 @@
     </Compile>
     <Compile Include="adminadvisors.aspx.designer.cs">
       <DependentUpon>adminadvisors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminContact.aspx.cs">
+      <DependentUpon>adminContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminContact.aspx.designer.cs">
+      <DependentUpon>adminContact.aspx</DependentUpon>
     </Compile>
     <Compile Include="advisors.aspx.cs">
       <DependentUpon>advisors.aspx</DependentUpon>

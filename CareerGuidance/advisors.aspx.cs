@@ -177,7 +177,7 @@ namespace CareerGuidance
                     message.From = fromAddress;
                     message.To.Add(advmail);
                     
-                    message.Subject = sub;
+                    message.Subject = usrname + "  Contacted For " + sub;
                     message.IsBodyHtml = true;
                     message.Body = mssgg;
                     smtpClient.Host = "smtp.gmail.com";   // We use gmail as our smtp client

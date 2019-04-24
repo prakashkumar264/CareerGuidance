@@ -47,6 +47,59 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        public DataSet sendcontact(string nm, string em, string ms)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[3];
+
+                objSqlParm[0] = new SqlParameter("@Name", SqlDbType.VarChar, 255);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = nm;
+
+                objSqlParm[1] = new SqlParameter("@Email", SqlDbType.VarChar, 255);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = em;
+
+                objSqlParm[2] = new SqlParameter("@Message", SqlDbType.VarChar, 255);
+                objSqlParm[2].Direction = ParameterDirection.Input;
+                objSqlParm[2].Value = ms;
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "sendcontact", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet checkemail(string email)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@Email", SqlDbType.VarChar, 255);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = email;
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "checkmail", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
         //Login User
         public DataSet loginuser(string email, string password)
         {

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Net.Mail;
 using System.Text;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -44,27 +45,64 @@ namespace CareerGuidance
             string email = txtEmail.Text;
             string password = Helper.ComputeHash(pass, "SHA512", null);
 
-            if(pass == repass)
+            DataSet dsemail = objuserDAL.checkemail(email);
+
+            if(dsemail.Tables[0].Rows.Count > 0)
             {
-                try
-                {
-                    DataSet dsregister = objuserDAL.registerform(name, email, password);
-
-                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Registered Successfully');window.location ='login.aspx';", true);
-                }
-                catch (Exception ex)
-                {
-
-                }
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Email id already Registered');window.location ='register.aspx';", true);
             }
             else
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Passwords Do not match');", true);
+                if (pass == repass)
+                {
+                    try
+                    {
+                        DataSet dsregister = objuserDAL.registerform(name, email, password);
+
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Registered Successfully');window.location ='login.aspx';", true);
+
+
+
+                        MailMessage message = new MailMessage();
+                        SmtpClient smtpClient = new SmtpClient();
+                        string msg = string.Empty;
+                        try
+                        {
+                            MailAddress fromAddress = new MailAddress("biodieselprakash@gmail.com");
+                            message.From = fromAddress;
+                            message.To.Add(email);
+
+                            message.Subject = "Upgrowth - Career Guidance";
+                            message.IsBodyHtml = true;
+                            message.Body = "You have Successfully Registered on our website. Login on our Site to get Career Advice";
+                            smtpClient.Host = "smtp.gmail.com";   // We use gmail as our smtp client
+                            smtpClient.Port = 587;
+                            smtpClient.EnableSsl = true;
+                            smtpClient.UseDefaultCredentials = true;
+                            smtpClient.Credentials = new System.Net.NetworkCredential("biodieselprakash@gmail.com", "QAZ123!@#");
+
+                            smtpClient.Send(message);
+                            msg = "Successful<BR>";
+                        }
+                        catch (Exception ex)
+                        {
+
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+
+                    }
+                    }
+
+                else
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Passwords Do not match');", true);
+                }
             }
-        }
-           
 
+            
         }
-
+        }
 
     }

@@ -39,7 +39,7 @@
     </head>
     <body style="margin: 0 0 0px; height:auto;">
         <!-- navigation panel -->
-        <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom bg-white" role="navigation">
+        <nav style="background-color: white;" class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom bg-white" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->

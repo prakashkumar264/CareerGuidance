@@ -1,13 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="addadvisor.aspx.cs" Inherits="CareerGuidance.addadvisor" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin.Master" AutoEventWireup="true" CodeBehind="advisoredit.aspx.cs" Inherits="CareerGuidance.advisoredit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+        <link href="plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="body" runat="server">
-
-      <section class="content">
+    <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>Add New Advisor</h2>
+                <h2>Edit Advisor</h2>
             </div>
 
             
@@ -27,8 +26,8 @@
                                                 <div class="col-md-8">
                                                     <div class="form-line">
                                                          <asp:TextBox ID="txtname" class="form-control" placeholder="Name Surname" runat="server"></asp:TextBox>
-                                                    </div>
-                                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"></asp:RequiredFieldValidator>
+                                                    </div>             
+                                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"></asp:RequiredFieldValidator>
                                                      <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter correct name"  ValidationExpression="^[a-zA-Z'@&#.\s]{1,50}$"></asp:RegularExpressionValidator>  
                        
                                                 </div>
@@ -136,12 +135,13 @@
                                                          ErrorMessage="Only JPEG images are allowed" 
                                                          ValidationExpression="(.*\.([Jj][Pp][Gg])|.*\.([Jj][Pp][Ee][Gg])$)">
                                                     </asp:RegularExpressionValidator>
-                                                  
+                                                     <asp:Label ID="lblprofilepic" runat="server" Text="Current Profile pic: " />
+                                                    <asp:Image ID="profilepic2"  runat="server" style="min-width: 200px; min-height: 200px;max-width: 250px;max-height: 250px;" />
                                                 </div>
                                                </div>
                                             </div>
 
-                              <asp:Button ID="btn_Add" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="ADD"  style="width:200px;" OnClick="btn_Add_Click" />
+                              <asp:Button ID="btn_Update" class="btn btn-block btn-lg bg-pink waves-effect" runat="server" Text="Update"  style="width:200px;" OnClick="btn_Update_Click" />
                             <br />
                             <br />
                         </div>

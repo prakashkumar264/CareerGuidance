@@ -25,9 +25,11 @@ namespace CareerGuidance
                 }
                 else
                 {
-                    string name = Convert.ToString(Session["advisordeleteid"]);
+                    int id = Convert.ToInt32(Session["advisordeleteid"]);
 
-                    adminname.Text = name;
+                    DataSet dsadvisorallinfo = objadminDAL.getadisorallinfo(id);
+
+                    adminname.Text = Convert.ToString(dsadvisorallinfo.Tables[0].Rows[0]["Name"]);
 
 
 

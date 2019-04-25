@@ -10,7 +10,7 @@
 namespace CareerGuidance {
     
     
-    public partial class addadvisor {
+    public partial class advisoredit {
         
         /// <summary>
         /// txtname control.
@@ -130,12 +130,30 @@ namespace CareerGuidance {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator regexValidator;
         
         /// <summary>
-        /// btn_Add control.
+        /// lblprofilepic control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_Add;
+        protected global::System.Web.UI.WebControls.Label lblprofilepic;
+        
+        /// <summary>
+        /// profilepic2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image profilepic2;
+        
+        /// <summary>
+        /// btn_Update control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_Update;
     }
 }

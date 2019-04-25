@@ -52,7 +52,7 @@
             <div class="navbar-header">
                 
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.aspx">UpGrowth</a>
+                <a class="navbar-brand" href="home.aspx">UpGrowth</a>
             </div>
            
         </div>
@@ -136,8 +136,12 @@
                                         <tr>
                                             <th>Name</th>
                                             <th>Email</th>
+                                            <th>Phone</th>
                                             <th>Location</th>
                                             <th>Type</th>
+                                            <th>Experience</th>
+                                            <th>About</th>
+                                            <th>Profile Pic</th>
                                             <th></th>
                                             <th></th>
                                         </tr>
@@ -146,8 +150,12 @@
                                         <tr>
                                             <th>Name</th>
                                             <th>Email</th>
+                                            <th>Phone</th>
                                             <th>Location</th>
                                             <th>Type</th>
+                                            <th>Experience</th>
+                                            <th>About</th>
+                                            <th>Profile Pic</th>
                                             <th></th>
                                             <th></th>
                                         </tr>

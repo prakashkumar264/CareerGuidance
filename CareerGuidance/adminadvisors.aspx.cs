@@ -49,12 +49,16 @@ namespace CareerGuidance
 
                     for (int i =0; i< dsadvisors.Tables[0].Rows.Count; i++)
                     {
-                        
+
                         sb.Append(" <tr>");
                         sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Name"] + "</td>");
-                        sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Location"] + "</td>");
                         sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Emailid"] + "</td>");
+                        sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Phoneno"] + "</td>");
+                        sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Location"] + "</td>");
                         sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Type"] + "</td>");
+                        sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["Experience"] + "</td>");
+                        sb.Append("    <td>" + dsadvisors.Tables[0].Rows[i]["About"] + "</td>");
+                        sb.Append("    <td><img src=\"" + dsadvisors.Tables[0].Rows[i]["Profilepic"] + "\" style=\"min-width: 200px;max-width:200px;min-height:200px;max-height:200px;\" /></td>");
                         sb.Append("    <td><a href=\"adminadvisors.aspx?editid=" + dsadvisors.Tables[0].Rows[i]["id"] + "\">Edit</a></td>");
                         sb.Append("    <td><a href=\"adminadvisors.aspx?deleteid=" + dsadvisors.Tables[0].Rows[i]["id"] + "\">Delete</a></td>");
                         sb.Append("</tr>");

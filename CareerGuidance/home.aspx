@@ -34,7 +34,7 @@
 
 
              <!-- navigation panel -->
-        <nav  style="background-color: white;" class="navbar navbar-default navbar-fixed-top  overlay-nav sticky-nav nav-border-bottom" role="navigation">
+        <nav   class="navbar navbar-default navbar-fixed-top  overlay-nav sticky-nav nav-border-bottom" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->
@@ -172,9 +172,9 @@
                         <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-desktop medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>Elegant / Unique design</h5>
+                                <h5>Who We Are </h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>Upgrowth  Career Guidance and Planning organisation working with a self-developed Psychometric tool, which is completely validated to Indian norms and is statistically proven.</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -182,9 +182,9 @@
                         <div class="features-section no-margin col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-target medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>True Responsiveness</h5>
+                                <h5>Career Encyclopedia  </h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>Explore updated information on 20 careers ; career overview,job profile, opportunities, career roadmap, skill sets required..</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -194,9 +194,9 @@
                         <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-trophy medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>Parallax Slider</h5>
+                                <h5>Career Assessment </h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>Assess student’s aptitude, personality & interest , result in an giving top career recommendation.</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -204,9 +204,9 @@
                         <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-scissors medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>Lightbox photo Gallery</h5>
+                                <h5>Skill & Interest </h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>They have  enter  and rate their skills and enter the interest they have towards their Passion.</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -216,9 +216,9 @@
                         <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-hotairballoon medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>Different Layout Type</h5>
+                                <h5>Extensive Support  & Resources</h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>Excel in your chosen career or stream and plan ahead through comprehensive and well-researched resources on the world of careers,  regular notifications, career e-guides, and more.</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -226,9 +226,9 @@
                         <div class="features-section col-md-12 col-sm-6 no-padding wow fadeInUp">
                             <div class="col-md-3 col-sm-2 col-xs-2 no-padding"><i class="icon-tools medium-icon"></i></div>
                             <div class="col-md-9 col-sm-9 col-xs-9 no-padding text-left f-right">
-                                <h5>Skills and Accordians</h5>
+                                <h5>Value-Added Services</h5>
                                 <div class="separator-line bg-yellow"></div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+                                <p>A successful career is not based on choice alone, as there are various efforts that go into creating the right profile to attract  recruiters</p>
                             </div>
                         </div>
                         <!-- end features item -->
@@ -246,7 +246,7 @@
                     <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten" data-wow-duration="300ms">
                         <i class="icon-heart medium-icon"></i>
                         <span id="anim-number-pizza" class="counter-number white-text main-font font-weight-600"></span>
-                        <span class="counter-title light-gray-text">Pizzas Ordered</span>
+                        <span class="counter-title light-gray-text">Career Guidance</span>
                     </div>
                     <!-- end counter item -->
                     <!-- counter item -->
@@ -293,10 +293,10 @@
                     <div class="col-md-12 col-sm-12 center-col text-center no-padding" id="animated-tab">
                         <!-- tab navigation -->
                         <ul class="nav nav-tabs margin-five no-margin-top xs-margin-bottom-seven">
-                            <li class="nav active"><a href="#tab6_sec1" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-picture"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Branding</span></li>
-                            <li class="nav"><a href="#tab6_sec2" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-tools"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Design</span></li>
-                            <li class="nav"><a href="#tab6_sec3" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-mobile"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Development</span></li>
-                            <li class="nav"><a href="#tab6_sec4" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-camera"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Photography</span></li>
+                            <li class="nav active"><a href="#tab6_sec1" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-picture"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Profile</span></li>
+                            <li class="nav"><a href="#tab6_sec2" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-tools"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Aptitude Test</span></li>
+                            <li class="nav"><a href="#tab6_sec3" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-mobile"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Jobs</span></li>
+                            <li class="nav"><a href="#tab6_sec4" data-toggle="tab" class="xs-min-height-inherit xs-no-padding"><span><i class="icon-camera"></i></span></a><br><span class="text-small text-uppercase letter-spacing-3 margin-five font-weight-600 xs-letter-spacing-none xs-display-none">Career Guidance</span></li>
                         </ul>
                         <!-- end tab navigation -->
                         <!-- tab content section -->
@@ -322,9 +322,9 @@
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">01</span>
                                 </div>
                                 <div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 about-text position-relative xs-text-center">
-                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Corinne Product</p>
-                                    <span class="case-study-work letter-spacing-3">Brand Strategy  |  Graphic Design</span>
-                                    <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
+                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Career Guidance</p>
+                                    <span class="case-study-work letter-spacing-3">Career Choice  |  Career Guidance</span>
+                                    <p class="width-90 xs-width-100">It is very important to seek professional career guidance. Just at the stage when you have to take vital decisions,  &amp; you must go to a professional career counselor. They can show you the right career path. &amp; Alliance International is such an agency that renders professional career counseling.</p>
                                     
                                 </div>
                             </div>
@@ -338,9 +338,9 @@
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">02</span>
                                 </div>
                                 <div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 about-text position-relative xs-text-center">
-                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Rebrand Coffee</p>
-                                    <span class="case-study-work letter-spacing-3">Web Design  |  Brand Strategy</span>
-                                    <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
+                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">What Are Career Assessments?</p>
+                                    <span class="case-study-work letter-spacing-3">Career Choice  |  Career Guidance</span>
+                                    <p class="width-90 xs-width-100">The Upgrrowth Career Assessment is an online career test that evaluates you including Personality, Aptitude, to suggest you top career options &amp; A Career Assessment is a test designed to understand where your unique set of strengths &amp;, aptitudes and skills lie, in order to recommend the right careers for you.</p>
                                    
                                 </div>
                             </div>
@@ -354,9 +354,9 @@
                                     <span class="about-number black-text font-weight-400 letter-spacing-2 xs-no-border xs-no-padding-left xs-display-none">03</span>
                                 </div>
                                 <div class="col-lg-8 col-md-9 col-sm-9 col-xs-12 about-text position-relative xs-text-center">
-                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">William Stormdal</p>
-                                    <span class="case-study-work letter-spacing-3">Brand Strategy  |  Graphic Design</span>
-                                    <p class="width-90 xs-width-100">Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing &amp; typesetting industry.</p>
+                                    <p class="title-small text-uppercase letter-spacing-3 black-text font-weight-600 no-margin-bottom">Team</p>
+                                    <span class="case-study-work letter-spacing-3">Career Choice  |  Career Guidance</span>
+                                    <p class="width-90 xs-width-100">The power of any career-guidance platform lies in the team that drives it.  &amp; The team’s expertise and breadth of knowledge can complement and steer the strength of technology powering it &amp;Furthermore, a single person cannot be expected to master several fields, and thus when it comes to career .</p>
                                    
                                 </div>
                             </div>

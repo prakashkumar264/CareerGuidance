@@ -23,7 +23,7 @@ namespace CareerGuidance
                 {
                     StringBuilder sb = new StringBuilder();
 
-                    sb.Append("<a href=\"index.aspx\" >Dashboard <i class=\"fa fa-angle-down\"></i></a>");
+                    sb.Append("<a href=\"profile.aspx\" >Dashboard <i class=\"fa fa-angle-down\"></i></a>");
 
                     dash.InnerHtml = sb.ToString();
                 }

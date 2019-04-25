@@ -104,9 +104,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AboutUs.aspx" />
+    <Content Include="addadvisor.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="adminadvisors.aspx" />
     <Content Include="adminContact.aspx" />
+    <Content Include="advisordelete.aspx" />
     <Content Include="advisors.aspx" />
     <Content Include="aptitude.aspx" />
     <Content Include="AptitudeTest.aspx" />
@@ -521,6 +523,7 @@
     <Content Include="admin.Master" />
     <None Include="Properties\PublishProfiles\AdvancedSettings.pubxml" />
     <None Include="Properties\PublishProfiles\Upgrowth - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\upgrowth - Web Deploy1.pubxml" />
     <None Include="Properties\PublishProfiles\upgrowthdemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="images\animation-bg.jpg" />
@@ -3981,6 +3984,13 @@
     <Compile Include="AboutUs.aspx.designer.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
+    <Compile Include="addadvisor.aspx.cs">
+      <DependentUpon>addadvisor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addadvisor.aspx.designer.cs">
+      <DependentUpon>addadvisor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin.aspx.cs">
       <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -4008,6 +4018,13 @@
     </Compile>
     <Compile Include="adminContact.aspx.designer.cs">
       <DependentUpon>adminContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="advisordelete.aspx.cs">
+      <DependentUpon>advisordelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="advisordelete.aspx.designer.cs">
+      <DependentUpon>advisordelete.aspx</DependentUpon>
     </Compile>
     <Compile Include="advisors.aspx.cs">
       <DependentUpon>advisors.aspx</DependentUpon>
@@ -4193,6 +4210,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdminPic\" />
     <Folder Include="App_Data\" />
     <Folder Include="CV\" />
     <Folder Include="ProfilePic\" />

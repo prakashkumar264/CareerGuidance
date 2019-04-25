@@ -58,7 +58,7 @@
             <div class="navbar-header">
                 
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.aspx">UpGrowth</a>
+                <a class="navbar-brand" href="home.aspx">UpGrowth</a>
             </div>
            
         </div>

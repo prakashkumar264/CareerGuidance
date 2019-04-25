@@ -16,16 +16,29 @@
                     <div class="card">
                         <div class="header">
                             
-                            <h5>Recommended Test</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                               <h5>Recommended Test</h5>
                                
-                            <asp:DropDownList runat="server" ID="ddluserspecificskill"   AllowSingleDeselect="true"  DataPlaceHolder="Recommend Skill Test" data-live-search="true" ></asp:DropDownList>
-                            <asp:Button ID="btn_subtwo" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_subtwo_Click"    />
+                                            <asp:DropDownList runat="server" ID="ddluserspecificskill"   AllowSingleDeselect="true"  DataPlaceHolder="Recommend Skill Test" data-live-search="true" ></asp:DropDownList>
+                                            <asp:Button ID="btn_subtwo" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_subtwo_Click"    />
                                
-                            <br /><br /><br />
-                             <h5>Other Test</h5>
-                             <asp:DropDownList runat="server" ID="ddlskill"   AllowSingleDeselect="true"  DataPlaceHolder="Other Test" data-live-search="true" ></asp:DropDownList>
+                                            <br /><br /><br />
+                                             <h5>Other Test</h5>
+                                             <asp:DropDownList runat="server" ID="ddlskill"   AllowSingleDeselect="true"  DataPlaceHolder="Other Test" data-live-search="true" ></asp:DropDownList>
 
-                             <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_submit_Click"    />
+                                             <asp:Button ID="btn_submit" class="btn btn-lg bg-green waves-effect" style="width:inherit"  runat="server" Text="Take Test" OnClick="btn_submit_Click"    />       
+                                                </div>
+                                <div class="col-md-6">
+
+                                    <h5> Instructions for the tests:</h5>
+                                    <p>1. Test Consist of 10 Questions based on skill you have selected</p>
+                                    <p>2. Total time for test is 15 minutes</p>
+                                    <p>3. After 15minutes test will be automatically submitted</p>
+                                    <p>4. There is not negative marking</p>
+                                </div>
+                            </div>
+                 
                            
                              <br /><br /><br />
                             

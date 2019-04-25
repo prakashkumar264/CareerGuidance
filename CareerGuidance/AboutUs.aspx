@@ -38,7 +38,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      <nav style="background-color: white;" class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
+      <nav  class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->
@@ -107,8 +107,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-8 text-center center-col">
-                        <div class="about-year text-uppercase white-text"><span class="clearfix">15</span> Years</div>
-                        <p class="title-small text-uppercase letter-spacing-1 white-text font-weight-100">Open since 2000, we're digital natives with a pioneering approach to open-source development.</p>
+                        <div class="about-year text-uppercase white-text"><span class="clearfix">1</span> Years</div>
+                        <p class="title-small text-uppercase letter-spacing-1 white-text font-weight-100">Education is the most powerful weapon which you can change the world.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 text-center service-year black-text">
-                                            <strong>Digital marketing for over eight years</strong>
+                                            <strong>Opportunites Don't Happen, You create Them</strong>
                                         </div>
                                     </div>
                                 </div>
@@ -217,8 +217,9 @@
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-md-6 col-sm-11 center-col text-center">
-                        <p class="title-large white-text text-uppercase letter-spacing-2"><strong>A digital agency dedicated to creating cutting-edge websites.</strong><p>
-                        <p class="text-large white-text text-uppercase margin-five no-margin-bottom">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<p>
+                        <p class="title-large white-text text-uppercase letter-spacing-2"><strong>It's a beutiful thing when a career & a passion come together.</strong><p>
+                        <p class="text-large white-text text-uppercase margin-five no-margin-bottom">The focus should be on becoming a strong and
+influential personality – cultivate compelling communication skills, focus on building trust and learn how to expand and leverage your professional network.<p>
                     </div>
                 </div>
             </div>

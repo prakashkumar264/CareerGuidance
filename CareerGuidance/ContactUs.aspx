@@ -39,7 +39,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-       <nav style="background-color: white;" class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
+       <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav nav-border-bottom" role="navigation">
             <div class="container">
                 <div class="row">
                     <!-- logo -->
@@ -121,8 +121,8 @@
                 <div class="row">
                     <div class="col-md-4 col-sm-6">
                         <p class="text-med text-uppercase letter-spacing-1 black-text font-weight-600">Contact Form</p>
-                        <p class="text-med">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                        <p class="text-med">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p class="text-med">We try to be as a reachable as possible.Please Fill the contact form for  </p>
+                        <p class="text-med">To get in touch with us and follow our updates & news alert online .</p>
                     </div>
                     <div class="col-md-6 col-sm-6  col-md-offset-2">
                            

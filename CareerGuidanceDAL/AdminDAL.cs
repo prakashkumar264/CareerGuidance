@@ -43,6 +43,67 @@ namespace CareerGuidanceDAL
             return ds;
         }
 
+        public DataSet getadvisorinfotwo()
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[0];
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadminadvisortwo", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet getadvisorinfo()
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[0];
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadvisorinfo", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet deleteadvisor(int id)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[1];
+
+
+                objSqlParm[0] = new SqlParameter("@id", SqlDbType.Int);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = id;
+
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "deleteadvisor", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+    
+
         public DataSet getadvisor()
         {
             SqlConnection objSqlConn = new SqlConnection();
@@ -53,6 +114,61 @@ namespace CareerGuidanceDAL
                 SqlParameter[] objSqlParm = new SqlParameter[0];
 
                 ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "getadvisorlist", objSqlParm);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return ds;
+        }
+
+        public DataSet addadvisor(string name, string email, string phone, string experience, string about, string profilepic, int locationid, int typeid, string location)
+        {
+            SqlConnection objSqlConn = new SqlConnection();
+
+            objSqlConn.ConnectionString = DBHelper.ConnectionString().ToString();
+            try
+            {
+                SqlParameter[] objSqlParm = new SqlParameter[9];
+
+
+                objSqlParm[0] = new SqlParameter("@Name", SqlDbType.VarChar, 50);
+                objSqlParm[0].Direction = ParameterDirection.Input;
+                objSqlParm[0].Value = name;
+
+                objSqlParm[1] = new SqlParameter("@Emailid", SqlDbType.VarChar, 50);
+                objSqlParm[1].Direction = ParameterDirection.Input;
+                objSqlParm[1].Value = email;
+
+                objSqlParm[2] = new SqlParameter("@Phoneno", SqlDbType.VarChar, 50);
+                objSqlParm[2].Direction = ParameterDirection.Input;
+                objSqlParm[2].Value = phone;
+
+                objSqlParm[3] = new SqlParameter("@Experience", SqlDbType.VarChar, 50);
+                objSqlParm[3].Direction = ParameterDirection.Input;
+                objSqlParm[3].Value = experience;
+
+                objSqlParm[4] = new SqlParameter("@About", SqlDbType.VarChar, -1);
+                objSqlParm[4].Direction = ParameterDirection.Input;
+                objSqlParm[4].Value = about;
+
+                objSqlParm[5] = new SqlParameter("@Profilepic", SqlDbType.VarChar, -1);
+                objSqlParm[5].Direction = ParameterDirection.Input;
+                objSqlParm[5].Value = profilepic;
+
+                objSqlParm[6] = new SqlParameter("@Locationid", SqlDbType.Int);
+                objSqlParm[6].Direction = ParameterDirection.Input;
+                objSqlParm[6].Value = locationid;
+
+                objSqlParm[7] = new SqlParameter("@Typeid", SqlDbType.Int);
+                objSqlParm[7].Direction = ParameterDirection.Input;
+                objSqlParm[7].Value = typeid;
+
+                objSqlParm[8] = new SqlParameter("@Location", SqlDbType.VarChar, 50);
+                objSqlParm[8].Direction = ParameterDirection.Input;
+                objSqlParm[8].Value = location;
+
+                ds = SqlHelper.ExecuteDataset(objSqlConn, CommandType.StoredProcedure, "addadvisor", objSqlParm);
             }
             catch (Exception ex)
             {

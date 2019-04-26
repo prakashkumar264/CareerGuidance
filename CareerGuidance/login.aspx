@@ -135,7 +135,7 @@
                             </div>
                            <br />
                             <asp:Button ID="btn_login" class="highlight-button-dark btn btn-medium button xs-margin-bottom-five" runat="server" Text="Login" OnClick="btn_login_Click"  />
-                           
+                            <a href="#" style="color: red;" >Forgot Password?</a>
                         </form>
 <br /><br /><br /><br /><br /><br /><br />
                     </div>
